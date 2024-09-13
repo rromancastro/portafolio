@@ -1,14 +1,22 @@
 nav {
     position: fixed;
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
-    background-color: #0E4166;
-    p {
-        font-family: $font1;
+    padding-right: 50px;
+    background-color: #183E70;
+    z-index: 100;
+    a {
+        text-decoration: none;
         color: $blanco1;
+        font-family: $font1;
+        transition: .5s;
+        &:hover {
+            opacity: .7;
+        }
     }
 }
 
@@ -19,5 +27,9 @@ nav {
         text-decoration: none;
         color: $blanco1;
         font-family: $font1;
+        transition: .5s;
+        &:hover {
+            opacity: .7;
+        }
     }
 }

@@ -7,13 +7,13 @@
     height: 100%;
     box-sizing: border-box;
     display: block;
-    background-color: #0e4166;
-    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+    background-color: #183E70;
+    background-image: linear-gradient(to bottom, #183E70, rgba(14, 65, 102, 0.86));
 }
 
 .firstSection {
     @include dflex (column, center, center, 0);
-    height: 90vh;
+    height: 100vh;
 }
 
 .name {
@@ -66,6 +66,99 @@
         svg {
             width: 27px;
             fill: $blanco1;
+        }
+    }
+}
+
+.aboutMe {
+    @include dflex (row, center, space-between, 85px);
+    padding: 55px;
+    height: 100vh;
+    img {
+        width: 30vw;
+        border-radius: 50%;
+        border: 8px #0E4065 solid;
+    }
+}
+
+.infoMe {
+    @include dflex (column, center, center, 15px);
+    p {
+        font-size: 25px;
+        font-family: $font1;
+        color: $text-grey;
+    }
+    .skills {
+        font-size: 18px;
+        a {
+            color: #183E70;
+        }
+    }
+}
+
+.projects {
+    background-color: #183E70;
+    @include dflex (column, center, center, 60px);
+    padding: 55px;
+    h2 {
+        color: $blanco1;
+        font-family: $font1;
+        font-size: 50px;
+        line-height: .7;
+   }
+}
+
+.proyecto {
+    @include dflex (row, center, space-between, 25px);
+    img {
+        height: 250px;
+        border: 2px solid $blanco1;
+        border-radius: 15px;
+    }
+    .infoProyecto {
+        @include dflex(column, start, center, 15px);
+        h3 {
+            font-family: $font1;
+            font-weight: 500;
+            color: $blanco1;
+            font-size: 50px;
+            line-height: 1;
+        }
+        p {
+            font-family: $font1;
+            font-weight: 500;
+            color: $blanco1;
+            font-size: 20px;
+        }
+        a {
+            font-family: $font1;
+            font-weight: 500;
+            color: $blanco1;
+            font-size: 15px;
+            background-color: rgb(177, 177, 177);
+            padding: 3px 20px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.contacto {
+    padding: 40px;
+    @include dflex (column, center, center, 5px);
+    p {
+        color: $text-grey;
+        font-family: $font1;
+    }
+    div {
+        @include dflex (row, center, center, 5px);
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        svg {
+            width: 20px;
+            fill: $text-grey;
         }
     }
 }

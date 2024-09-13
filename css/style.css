@@ -4,15 +4,23 @@
 nav {
   position: fixed;
   width: 100vw;
-  height: 10vh;
+  height: 7vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
-  background-color: #0E4166;
+  padding-right: 50px;
+  background-color: #183E70;
+  z-index: 100;
 }
-nav p {
-  font-family: "Kanit", sans-serif;
+nav a {
+  text-decoration: none;
   color: #DBDCD7;
+  font-family: "Kanit", sans-serif;
+  transition: 0.5s;
+}
+nav a:hover {
+  opacity: 0.7;
 }
 
 .navLinks {
@@ -23,6 +31,10 @@ nav p {
   text-decoration: none;
   color: #DBDCD7;
   font-family: "Kanit", sans-serif;
+  transition: 0.5s;
+}
+.navLinks a:hover {
+  opacity: 0.7;
 }
 
 .svgBackground {
@@ -34,8 +46,8 @@ nav p {
   height: 100%;
   box-sizing: border-box;
   display: block;
-  background-color: #0e4166;
-  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+  background-color: #183E70;
+  background-image: linear-gradient(to bottom, #183E70, rgba(14, 65, 102, 0.86));
 }
 
 .firstSection {
@@ -44,7 +56,7 @@ nav p {
   align-items: center;
   justify-content: center;
   gap: 0;
-  height: 90vh;
+  height: 100vh;
 }
 
 .name {
@@ -103,6 +115,127 @@ nav p {
 .social a svg {
   width: 27px;
   fill: #DBDCD7;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+  padding: 55px;
+  height: 100vh;
+}
+.aboutMe img {
+  width: 30vw;
+  border-radius: 50%;
+  border: 8px #0E4065 solid;
+}
+
+.infoMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.infoMe p {
+  font-size: 25px;
+  font-family: "Kanit", sans-serif;
+  color: #3d3d3d;
+}
+.infoMe .skills {
+  font-size: 18px;
+}
+.infoMe .skills a {
+  color: #183E70;
+}
+
+.projects {
+  background-color: #183E70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 55px;
+}
+.projects h2 {
+  color: #DBDCD7;
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
+  line-height: 0.7;
+}
+
+.proyecto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.proyecto img {
+  height: 250px;
+  border: 2px solid #DBDCD7;
+  border-radius: 15px;
+}
+.proyecto .infoProyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+}
+.proyecto .infoProyecto h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  color: #DBDCD7;
+  font-size: 50px;
+  line-height: 1;
+}
+.proyecto .infoProyecto p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  color: #DBDCD7;
+  font-size: 20px;
+}
+.proyecto .infoProyecto a {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  color: #DBDCD7;
+  font-size: 15px;
+  background-color: rgb(177, 177, 177);
+  padding: 3px 20px;
+  border-radius: 10px;
+}
+
+.contacto {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.contacto p {
+  color: #3d3d3d;
+  font-family: "Kanit", sans-serif;
+}
+.contacto div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.contacto div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacto div svg {
+  width: 20px;
+  fill: #3d3d3d;
 }
 
 * {

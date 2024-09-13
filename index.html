@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Román Castro</title>
@@ -9,10 +10,10 @@
 <body>
     <header>
         <nav>
-            <p>RC</p>
+            <a href="#firstSection">RC</a>
             <div class="navLinks">
-                <a href="#">Sobre Mi</a>
-                <a href="#">Proyectos</a>
+                <a href="#aboutMe">Sobre mí</a>
+                <a href="#projects">Proyectos</a>
                 <a href="#">Contacto</a>
             </div>
         </nav>
@@ -69,7 +70,7 @@
 			</use>
 		</g>
 	    </svg>
-        <section class="firstSection">
+        <section class="firstSection" id="#firstSection">
             <div class="name">
                 <h1>Román Castro</h1>
                 <div>
@@ -83,6 +84,74 @@
                 <a href="https://www.linkedin.com/in/roman-castro-52679b321/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
             </div>
         </section>
+        <section class="aboutMe" id="aboutMe">
+            <img src="./multimedia/myphoto.jpg" alt="myphoto">
+            <div class="infoMe">
+                <p>
+                    Mi nombre es Román, tengo 18 años y soy de la ciudad de San Luis, Argentina. Me estoy especializando en el desarrollo Front-End, siempre me esfuerzo por crecer y darlo todo. Tengo capacidad de adaptarme completamente a un diseño responsivo. Soy de mente abierta y constantemente aprendiendo nuevas técnicas y oportunidades para mejorar mi trabajo.<br> 
+                    Actualmente, estoy estudiando en CoderHouse la Diplomatura en Full-Stack Web Developer.
+                </p>
+                <p class="skills">Habilidades actualmente: HTML, CSS/Scss/Sass, Git, TestingQA y uso de frameworks como Bootstrap, TailwindCSS. Base en SCRUM. Aprendiendo JavaScript.<br>
+                    Proximo a desarrollar: NextJS, ReactJs, Desarrollo Avanzado de Backend, Testing y escalabilidad del Backend.
+                    <a href="./multimedia/planDeEstudio-Coderhouse.jpg" download>Descargar Plan de estudio</a>
+                </p>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Mis Proyectos</h2>
+            <article class="proyecto" data-aos="fade-up">
+                <img src="./multimedia/proyectos/page1.png" alt="" class="deskView">
+                <img src="./multimedia/proyectos/page1mobile.png" alt="" class="mobileView">
+                <div class="infoProyecto">
+                    <h3>Boca Juniors Page</h3>
+                    <p>Proyecto final presentado para CoderHouse en el curso de Desarrollo Web. Esta web cuenta con diferentes secciones como informacion sobre proximos partidos, una galeria, y un e-commerce</p>
+                    <a href="https://bocajuniors-github-io.vercel.app/index.html" target="_blank">Link</a>
+                </div>
+            </article>
+            <article class="proyecto" data-aos="zoom-out-right">
+                <div class="infoProyecto">
+                    <h3>E-Carta de Restaurante</h3>
+                    <p>Trabajo de una E-Carta hecho para el restaurante "De La Ostia", de San Luis Capital.</p>
+                    <a href="https://de-la-ostia.vercel.app/" target="_blank">Link</a>
+                </div>
+                <img src="./multimedia/proyectos/page2.png" alt="" class="deskView">
+                <img src="./multimedia/proyectos/page2mobile.png" alt="" class="mobileView">
+            </article>
+            <article class="proyecto" data-aos="fade-up">
+                <img src="./multimedia/proyectos/page4.png" alt="" class="deskView">
+                <img src="./multimedia/proyectos/page4mobile.png" alt="" class="mobileView">
+                <div class="infoProyecto">
+                    <p>Desarrollando:</p>
+                    <h3>CONFORT.CO</h3>
+                    <p>Proyecto para el curso de JavaScript. Esta web simula un E-Commerce de muebles y textiles. Hecha la base para implementarle JavaScript. Será presentada como proyecto final.</p>
+                    <a href="https://mystore-green.vercel.app/" target="_blank">Link</a>
+                </div>
+            </article>
+            <article class="proyecto" data-aos="zoom-out-right">
+                <div class="infoProyecto">
+                    <p>Proyectos anteriores:</p>
+                    <h3>Juegos Didacticos SL</h3>
+                    <p>Proyecto de el año 2023. En mis comienzos del desarrollo web.</p>
+                    <a href="https://juegosdidacticossl.vercel.app" target="_blank">Link</a>
+                </div>
+                <img src="./multimedia/proyectos/page3.png" alt="" class="deskView">
+                <img src="./multimedia/proyectos/page3mobile.png" alt="" class="mobileView">
+            </article>
+        </section>
+        <section class="contacto">
+            <p>Gracias por tu interes.</p>
+            <p>Telefono: +54 0266 503 6482</p>
+            <p>Correo Electronico: rromancastro06@gmail.com</p>
+            <div>
+                <p>Instagram:</p>
+                <a href="https://www.instagram.com/_rromancastro/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            </div>
+        </section>
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
