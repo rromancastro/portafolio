@@ -110,10 +110,15 @@
 
 .proyecto {
     @include dflex (row, center, space-between, 25px);
-    img {
-        height: 250px;
-        border: 2px solid $blanco1;
-        border-radius: 15px;
+    .images {
+        display: flex;
+        gap: 15px;
+        img {
+            height: 250px;
+            border: 2px solid $blanco1;
+            border-radius: 15px;
+        }
+
     }
     .infoProyecto {
         @include dflex(column, start, center, 15px);
@@ -148,6 +153,8 @@
     p {
         color: $text-grey;
         font-family: $font1;
+        text-wrap: wrap;
+        text-align: center
     }
     div {
         @include dflex (row, center, center, 5px);

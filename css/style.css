@@ -174,7 +174,11 @@ nav a:hover {
   justify-content: space-between;
   gap: 25px;
 }
-.proyecto img {
+.proyecto .images {
+  display: flex;
+  gap: 15px;
+}
+.proyecto .images img {
   height: 250px;
   border: 2px solid #DBDCD7;
   border-radius: 15px;
@@ -220,6 +224,8 @@ nav a:hover {
 .contacto p {
   color: #3d3d3d;
   font-family: "Kanit", sans-serif;
+  text-wrap: wrap;
+  text-align: center;
 }
 .contacto div {
   display: flex;
@@ -238,6 +244,76 @@ nav a:hover {
   fill: #3d3d3d;
 }
 
+@media (max-width: 1024px) {
+  .infoMe p {
+    font-size: 20px;
+  }
+  .proyecto .images img {
+    height: 200px;
+  }
+  .proyecto .infoProyecto h3 {
+    font-size: 35px;
+  }
+  .proyecto .infoProyecto p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .name h1 {
+    font-size: 50px;
+  }
+  .name div h2 {
+    font-size: 15px;
+  }
+  .name div img {
+    width: 20px;
+  }
+  .infoMe p {
+    font-size: 17px;
+  }
+  .infoMe .skills {
+    font-size: 14px;
+  }
+  .proyecto .images img {
+    height: 140px;
+  }
+  .proyecto .infoProyecto h3 {
+    font-size: 30px;
+  }
+  .proyecto .infoProyecto p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 670px) {
+  .aboutMe {
+    gap: 30px;
+    padding: 30px;
+    height: 100%;
+    flex-direction: column;
+  }
+  .aboutMe img {
+    width: 200px;
+  }
+  .infoMe p {
+    font-size: 20px;
+  }
+  .proyecto {
+    flex-direction: column;
+    width: 80vw;
+  }
+  .proyecto .images {
+    order: 2;
+  }
+  .proyecto .images img {
+    height: 22vh;
+  }
+  .proyecto .infoProyecto h3 {
+    font-size: 35px;
+  }
+  .proyecto .infoProyecto p {
+    font-size: 18px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
