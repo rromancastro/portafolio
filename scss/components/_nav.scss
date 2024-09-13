@@ -1,8 +1,11 @@
 nav {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    height: 10vh;
+    background-color: #0E4166;
     p {
         font-family: $font1;
         color: $blanco1;

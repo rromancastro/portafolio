@@ -1,4 +1,4 @@
-svg {
+.svgBackground {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -44,6 +44,28 @@ svg {
             width: 30px;
             height: auto;
             opacity: .6;
+        }
+    }
+}
+
+.social {
+    position: absolute;
+    bottom: 25px;
+    @include dflex (row, center, center, 10px);
+    .download {
+        background-color: #0e416683;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    a {
+        font-family: $font1;
+        text-decoration: none;
+        color: $blanco1;
+        display: flex;
+        align-items: center;
+        svg {
+            width: 27px;
+            fill: $blanco1;
         }
     }
 }
