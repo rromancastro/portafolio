@@ -71,6 +71,17 @@
 }
 
 @media (max-width: 670px) {
+    .name {
+        h1 {
+            font-size: 40px;
+        }
+        div {
+            h2 {
+                font-size: 14px;
+            }
+
+        }
+    }
     .aboutMe {
         gap: 30px;
         padding: 30px;
@@ -91,9 +102,11 @@
         flex-direction: column;
         width: 80vw;
         .images {
+            width: 40vh;
+            height: 15vh;
             order: 2;
             img {
-                height: 22vh;
+                height: 100%;
             }
         }
         .infoProyecto {

@@ -285,6 +285,12 @@ nav a:hover {
   }
 }
 @media (max-width: 670px) {
+  .name h1 {
+    font-size: 40px;
+  }
+  .name div h2 {
+    font-size: 14px;
+  }
   .aboutMe {
     gap: 30px;
     padding: 30px;
@@ -302,10 +308,12 @@ nav a:hover {
     width: 80vw;
   }
   .proyecto .images {
+    width: 40vh;
+    height: 15vh;
     order: 2;
   }
   .proyecto .images img {
-    height: 22vh;
+    height: 100%;
   }
   .proyecto .infoProyecto h3 {
     font-size: 35px;
