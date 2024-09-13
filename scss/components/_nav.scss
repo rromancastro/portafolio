@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 10vh;
+    p {
+        font-family: $font1;
+        color: $blanco1;
+    }
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+    a {
+        text-decoration: none;
+        color: $blanco1;
+        font-family: $font1;
+    }
+}

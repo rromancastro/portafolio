@@ -1,0 +1,49 @@
+svg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+.firstSection {
+    @include dflex (column, center, center, 0);
+    height: 90vh;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-family: $font2;
+        font-size: 80px;
+        font-weight: 100;
+        color: #ffffff;
+        opacity: .6;
+        line-height: 1;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        h2 {
+            font-family: $font2;
+            font-size: 24px;
+            font-weight: 100;
+            color: #ffffff;
+            opacity: .6;
+            line-height: 1;
+        }
+        img {
+            width: 30px;
+            height: auto;
+            opacity: .6;
+        }
+    }
+}
