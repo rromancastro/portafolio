@@ -162,12 +162,12 @@
 
 .contacto {
     padding: 40px;
-    @include dflex (column, center, center, 5px);
+    @include dflex (column, center, center, 0px);
     p {
         color: $text-grey;
         font-family: $font1;
         text-wrap: wrap;
-        text-align: center
+        text-align: center;
     }
     div {
         @include dflex (row, center, center, 5px);
