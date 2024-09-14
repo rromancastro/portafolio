@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
@@ -91,10 +92,23 @@
                     Mi nombre es Román, tengo 18 años y soy de la ciudad de San Luis, Argentina. Me estoy especializando en el desarrollo Front-End, siempre me esfuerzo por crecer y darlo todo. Tengo capacidad de adaptarme completamente a un diseño responsivo. Soy de mente abierta y constantemente aprendiendo nuevas técnicas y oportunidades para mejorar mi trabajo.<br> 
                     Actualmente, estoy estudiando en CoderHouse la Diplomatura en Full-Stack Web Developer.
                 </p>
-                <p class="skills">Habilidades actualmente: HTML, CSS/Scss/Sass, Git, TestingQA y uso de frameworks como Bootstrap, TailwindCSS. Base en SCRUM. Aprendiendo JavaScript.<br>
-                    Proximo a desarrollar: NextJS, ReactJs, Desarrollo Avanzado de Backend, Testing y escalabilidad del Backend.
+                <p class="skills"><u>Habilidades actualmente:</u> HTML, CSS/Scss/Sass, Git, TestingQA y uso de frameworks como Bootstrap, TailwindCSS. Base en SCRUM. Aprendiendo JavaScript.<br>
+                    <u>Proximo a desarrollar:</u> NextJS, ReactJs, Desarrollo Avanzado de Backend, Testing y escalabilidad del Backend.
                     <a href="./multimedia/planDeEstudio-Coderhouse.jpg" download>Descargar Plan de estudio</a>
                 </p>
+                <p class="col">
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Skills
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div>
+                        <p class="skills skillsCollapse"><u>Habilidades actualmente:</u> HTML, CSS/Scss/Sass, Git, TestingQA y uso de frameworks como Bootstrap, TailwindCSS. Base en SCRUM. Aprendiendo JavaScript.<br>
+                            <u>Proximo a desarrollar:</u> NextJS, ReactJs, Desarrollo Avanzado de Backend, Testing y escalabilidad del Backend.
+                            <a href="./multimedia/planDeEstudio-Coderhouse.jpg" download>Descargar Plan de estudio</a>
+                        </p>
+                    </div>
+                  </div>
             </div>
         </section>
         <section class="projects" id="projects">
@@ -106,14 +120,14 @@
                 </div>
                 <div class="infoProyecto">
                     <h3>Boca Juniors Page</h3>
-                    <p>Proyecto final presentado para CoderHouse en el curso de Desarrollo Web. Esta web cuenta con diferentes secciones como informacion sobre proximos partidos, una galeria, y un e-commerce</p>
+                    <p>Proyecto final presentado para CoderHouse en el curso de Desarrollo Web. Esta web cuenta con diferentes secciones como información sobre próximos partidos, una galería, y un e-commerce</p>
                     <a href="https://bocajuniors-github-io.vercel.app/index.html" target="_blank">Link</a>
                 </div>
             </article>
             <article class="proyecto" data-aos="zoom-out-right">
                 <div class="infoProyecto">
                     <h3>E-Carta de Restaurante</h3>
-                    <p>Trabajo de una E-Carta hecho para el restaurante "De La Ostia", de San Luis Capital.</p>
+                    <p>Trabajo de una E-Carta hecha para el restaurante "De La Ostia", de San Luis Capital.</p>
                     <a href="https://de-la-ostia.vercel.app/" target="_blank">Link</a>
                 </div>
                 <div class="images">
@@ -137,7 +151,7 @@
                 <div class="infoProyecto">
                     <p>Proyectos anteriores:</p>
                     <h3>Juegos Didacticos SL</h3>
-                    <p>Proyecto de el año 2023. En mis comienzos del desarrollo web.</p>
+                    <p>Proyecto hecho en el año 2023. En mis comienzos del desarrollo web.</p>
                     <a href="https://juegosdidacticossl.vercel.app" target="_blank">Link</a>
                 </div>
                 <div class="images">
@@ -161,5 +175,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

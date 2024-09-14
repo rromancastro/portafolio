@@ -151,6 +151,18 @@ nav a:hover {
   color: #183E70;
 }
 
+.col {
+  display: none;
+}
+.col button {
+  font-family: "Kanit", sans-serif;
+  color: #3d3d3d;
+  background-color: rgb(190, 190, 190);
+  border: none;
+  padding: 5px 20px;
+  border-radius: 14px;
+}
+
 .projects {
   background-color: #183E70;
   display: flex;
@@ -302,6 +314,15 @@ nav a:hover {
   }
   .infoMe p {
     font-size: 20px;
+  }
+  .skills {
+    display: none;
+  }
+  .col {
+    display: inline-block;
+  }
+  .skillsCollapse {
+    display: inline-block;
   }
   .proyecto {
     flex-direction: column;

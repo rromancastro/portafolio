@@ -98,6 +98,17 @@
         }
     }
 
+    .skills {
+        display: none;
+    }
+
+    .col {
+        display: inline-block;
+    }
+    .skillsCollapse {
+        display: inline-block;
+    }
+
     .proyecto {
         flex-direction: column;
         width: 80vw;

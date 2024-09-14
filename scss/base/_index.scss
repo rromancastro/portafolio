@@ -96,6 +96,18 @@
     }
 }
 
+.col {
+    display: none;
+    button {
+        font-family: $font1;
+        color: $text-grey;
+        background-color: rgb(190, 190, 190);
+        border: none;
+        padding: 5px 20px;
+        border-radius: 14px;
+    }
+}
+
 .projects {
     background-color: #183E70;
     @include dflex (column, center, center, 60px);
