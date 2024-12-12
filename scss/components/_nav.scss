@@ -7,8 +7,9 @@ nav {
     align-items: center;
     padding: 15px;
     padding-right: 50px;
-    background-color: #183E70;
+    background-color: #061837;
     z-index: 100;
+    border-bottom: 1px #37485F solid;
     a {
         text-decoration: none;
         color: $blanco1;
@@ -30,6 +31,17 @@ nav {
         transition: .5s;
         &:hover {
             opacity: .7;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    nav {
+        padding: 0px 20px; 
+    }
+    .navLinks {
+        a {
+            font-size: 14px;
         }
     }
 }

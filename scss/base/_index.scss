@@ -7,8 +7,8 @@
     height: 100%;
     box-sizing: border-box;
     display: block;
-    background-color: #183E70;
-    background-image: linear-gradient(to bottom, #183E70, rgba(14, 65, 102, 0.86));
+    background-color: #061837;
+    background-image: linear-gradient(to bottom, #061837, #0e4166db);
 }
 
 .firstSection {
@@ -53,7 +53,7 @@
     bottom: 25px;
     @include dflex (row, center, center, 10px);
     .download {
-        background-color: #0e416683;
+        background-color: #11476db6;
         padding: 5px 10px;
         border-radius: 5px;
     }
@@ -70,115 +70,394 @@
     }
 }
 
-.aboutMe {
-    @include dflex (row, center, space-between, 85px);
-    padding: 55px;
-    height: 100vh;
-    img {
-        width: 30vw;
-        border-radius: 50%;
-        border: 8px #0E4065 solid;
-    }
-}
-
-.infoMe {
-    @include dflex (column, center, center, 15px);
-    p {
-        font-size: 25px;
+#about {
+    display: grid;
+    padding: 7vw;
+    grid-template-columns: 60% 40%;
+    gap: 80px;
+    h2 {
         font-family: $font1;
-        color: $text-grey;
-    }
-    .skills {
-        font-size: 18px;
-        a {
-            color: #183E70;
+        color: $blanco1;
+        font-size: 35px;
+        span {
+            color: #4099AE;
+            font-family: $font2;
         }
     }
-}
-
-.col {
-    display: none;
-    button {
-        font-family: $font1;
-        color: $text-grey;
-        background-color: rgb(190, 190, 190);
-        border: none;
-        padding: 5px 20px;
-        border-radius: 14px;
-        font-size: 20px;
-    }
-}
-
-.projects {
-    background-color: #183E70;
-    @include dflex (column, center, center, 60px);
-    padding: 55px;
-    h2 {
+    p {
         color: $blanco1;
         font-family: $font1;
-        font-size: 50px;
-        line-height: .7;
-   }
-}
-
-.proyecto {
-    @include dflex (row, center, space-between, 25px);
-    .images {
-        display: flex;
-        gap: 15px;
-        img {
-            height: 250px;
-            border: 2px solid $blanco1;
-            border-radius: 15px;
-        }
-
-    }
-    .infoProyecto {
-        @include dflex(column, start, center, 15px);
-        h3 {
-            font-family: $font1;
-            font-weight: 500;
-            color: $blanco1;
-            font-size: 50px;
-            line-height: 1;
-        }
-        p {
-            font-family: $font1;
-            font-weight: 500;
-            color: $blanco1;
-            font-size: 20px;
-        }
-        a {
-            font-family: $font1;
-            font-weight: 500;
-            color: $blanco1;
-            font-size: 15px;
-            background-color: rgb(177, 177, 177);
-            padding: 3px 20px;
-            border-radius: 10px;
+        font-weight: 200;
+        font-size: 20px;
+        span {
+            color: #7ec2d1;
         }
     }
 }
 
-.contacto {
-    padding: 40px;
-    @include dflex (column, center, center, 0px);
-    p {
-        color: $text-grey;
+#skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.skillCard {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: #092d47;
+    margin-bottom: 5px;
+    img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    h3 {
+        color: $blanco1;
         font-family: $font1;
-        text-wrap: wrap;
-        text-align: center;
+        font-size: 18px;
+        margin: 0;
+        display: inline-block;
+    }
+}
+
+#projects {
+    overflow: hidden;
+    padding: 50px;
+    min-height: 50vh;
+    background-color: #061838;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    h2 {
+        font-family: $font1;
+        color: $blanco1;
+        font-size: 35px;
+        span {
+            color: #4099AE;
+            font-family: $font2;
+        }
+    }
+}
+
+.projectCard {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    width: 70vw;
+    height: auto;
+    background-color: #071533;
+    box-shadow: 1px 1px 1px #1A475F;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     div {
-        @include dflex (row, center, center, 5px);
+        padding: 20px;
+        h3 {
+            font-family: $font1;
+            color: $blanco1;
+            font-size: 25px;
+            font-weight: 500;
+            span {
+                color: #4099AE;
+                font-family: $font2;
+            }
+        }
+        p {
+            color: $blanco1;
+            font-family: $font1;
+            font-weight: 300;
+        }
         a {
-            display: flex;
+            margin-top: 10px;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
+            padding: 2px;
+            background-color: #092d47;
+            border-radius: 50%;
+            img {
+                padding: 2px;
+                width: 20px;
+            }
         }
-        svg {
-            width: 20px;
-            fill: $text-grey;
+        div {
+            display: flex;
+            gap: 5px;
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
+#skillCardMini {
+    display: flex;
+    align-items: center;
+    background-color: #092d47;
+    padding: 4px;
+    gap: 5px;
+    h4 {
+        color: $blanco1;
+        font-family: $font1;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.invert {
+    box-shadow: -1px 1px 1px #1A475F;
+    grid-template-columns: 55% 45%;
+    div {
+        order: 1;
+    }
+    .imageProject {
+        order: 2;
+    }
+}
+
+#contacto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    min-height: 50vh;
+    padding: 7vw;
+
+    h2 {
+        font-family: $font1;
+        color: $blanco1;
+        font-size: 35px;
+        span {
+            color: #4099AE;
+            font-family: $font2;
+        }
+    }
+    h3 {
+        font-family: $font1;
+        color: $blanco1;
+        font-weight: 300;
+        a {
+            font-family: $font1;
+            color: $blanco1;
+        }
+    }
+    h4 {
+        font-family: $font2;
+        color: #94b9d467;
+        font-size: 50px;
+        line-height: 1;
+        font-weight: 500;
+    }
+    h5 {
+        font-family: $font2;
+        color: #94b9d467;
+        font-weight: 500;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #contacto {
+        h4 {
+            font-size: 40px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+
+
+    .name {
+        h1 {
+            font-size: 50px;
+        }
+        div {
+            h2 {
+                font-size: 20px;
+            }
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    #about {
+    gap: 40px;
+    padding: 60px;
+        p {
+            font-size: 18px;
+        }
+    }
+
+    #skills {
+        grid-template-columns: 100%;
+    }
+
+    .projectCard {
+        width: 85vw;
+        div {
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 13px;
+            }
+            a {
+                
+            margin-top: 0px;
+            }
+            padding: 4px 10px;
+            margin-top: 0px;
+            div {
+                
+            margin-top: 3px;
+            }
+        }
+    }
+
+    #skillCardMini {
+        h4 {
+            font-size: 10px;
+        }
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+
+    #contacto {
+        padding: 60px;
+        h2 {
+            font-size: 40px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        h4 {
+            font-size: 30px;
+        }
+        h5 {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+
+    .name {
+        h1 {
+            font-size: 35px;
+        }
+        div {
+            h2 {
+                font-size: 14px;
+            }
+            img {
+                width: 15px;
+            }
+        }
+    }
+
+    #about {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #projects {
+        padding: 50px 0px;
+    }
+
+    .projectCard {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        div {
+            padding: 2px 5px;
+            margin-left: 10px;
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 13px;
+                span {
+                    display: none;
+                }
+            }
+            a {
+                margin-top: 5px;
+                img {
+                    padding: 1px;
+                    width: 20px;
+                }
+            }
+            div {
+                gap: 5px;
+            margin-top: 5px;
+            margin-left: 0;
+            margin-bottom: 10px;
+            }
+        }
+    }
+
+    #skillCardMini {
+        padding: 4px;
+        h4 {
+            font-size: 10px;
+        }
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    
+    .invert {
+        img {
+
+            order: 1;
+        }
+        div {
+            order: 2;
+        }
+    }
+
+
+    #contacto {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        h2 {
+            font-size: 40px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        h4 {
+            font-size: 30px;
+        }
+        h5 {
+            font-size: 15px;
         }
     }
 }

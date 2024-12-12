@@ -10,8 +10,9 @@ nav {
   align-items: center;
   padding: 15px;
   padding-right: 50px;
-  background-color: #183E70;
+  background-color: #061837;
   z-index: 100;
+  border-bottom: 1px #37485F solid;
 }
 nav a {
   text-decoration: none;
@@ -37,6 +38,14 @@ nav a:hover {
   opacity: 0.7;
 }
 
+@media (max-width: 440px) {
+  nav {
+    padding: 0px 20px;
+  }
+  .navLinks a {
+    font-size: 14px;
+  }
+}
 .svgBackground {
   z-index: -1;
   position: absolute;
@@ -46,8 +55,8 @@ nav a:hover {
   height: 100%;
   box-sizing: border-box;
   display: block;
-  background-color: #183E70;
-  background-image: linear-gradient(to bottom, #183E70, rgba(14, 65, 102, 0.86));
+  background-color: #061837;
+  background-image: linear-gradient(to bottom, #061837, rgba(14, 65, 102, 0.8588235294));
 }
 
 .firstSection {
@@ -101,7 +110,7 @@ nav a:hover {
   gap: 10px;
 }
 .social .download {
-  background-color: rgba(14, 65, 102, 0.5137254902);
+  background-color: rgba(17, 71, 109, 0.7137254902);
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -117,231 +126,357 @@ nav a:hover {
   fill: #DBDCD7;
 }
 
-.aboutMe {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 85px;
-  padding: 55px;
-  height: 100vh;
+#about {
+  display: grid;
+  padding: 7vw;
+  grid-template-columns: 60% 40%;
+  gap: 80px;
 }
-.aboutMe img {
-  width: 30vw;
-  border-radius: 50%;
-  border: 8px #0E4065 solid;
+#about h2 {
+  font-family: "Kanit", sans-serif;
+  color: #DBDCD7;
+  font-size: 35px;
+}
+#about h2 span {
+  color: #4099AE;
+  font-family: "Dela Gothic One", system-ui;
+}
+#about p {
+  color: #DBDCD7;
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+#about p span {
+  color: #7ec2d1;
 }
 
-.infoMe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+#skills {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
 }
-.infoMe p {
-  font-size: 25px;
-  font-family: "Kanit", sans-serif;
-  color: #3d3d3d;
-}
-.infoMe .skills {
+#skills h2 {
   font-size: 18px;
-}
-.infoMe .skills a {
-  color: #183E70;
+  font-weight: 400;
 }
 
-.col {
-  display: none;
+.skillCard {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: #092d47;
+  margin-bottom: 5px;
 }
-.col button {
+.skillCard img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.skillCard h3 {
+  color: #DBDCD7;
   font-family: "Kanit", sans-serif;
-  color: #3d3d3d;
-  background-color: rgb(190, 190, 190);
-  border: none;
-  padding: 5px 20px;
-  border-radius: 14px;
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0;
+  display: inline-block;
 }
 
-.projects {
-  background-color: #183E70;
+#projects {
+  overflow: hidden;
+  padding: 50px;
+  min-height: 50vh;
+  background-color: #061838;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
-  padding: 55px;
+  gap: 20px;
 }
-.projects h2 {
-  color: #DBDCD7;
+#projects h2 {
   font-family: "Kanit", sans-serif;
-  font-size: 50px;
-  line-height: 0.7;
+  color: #DBDCD7;
+  font-size: 35px;
+}
+#projects h2 span {
+  color: #4099AE;
+  font-family: "Dela Gothic One", system-ui;
 }
 
-.proyecto {
-  display: flex;
-  flex-direction: row;
+.projectCard {
+  display: grid;
+  grid-template-columns: 45% 55%;
   align-items: center;
-  justify-content: space-between;
-  gap: 25px;
+  width: 70vw;
+  height: auto;
+  background-color: #071533;
+  box-shadow: 1px 1px 1px #1A475F;
 }
-.proyecto .images {
-  display: flex;
-  gap: 15px;
+.projectCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.proyecto .images img {
-  height: 250px;
-  border: 2px solid #DBDCD7;
-  border-radius: 15px;
+.projectCard div {
+  padding: 20px;
 }
-.proyecto .infoProyecto {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+.projectCard div h3 {
+  font-family: "Kanit", sans-serif;
+  color: #DBDCD7;
+  font-size: 25px;
+  font-weight: 500;
+}
+.projectCard div h3 span {
+  color: #4099AE;
+  font-family: "Dela Gothic One", system-ui;
+}
+.projectCard div p {
+  color: #DBDCD7;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+}
+.projectCard div a {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  gap: 15px;
+  padding: 2px;
+  background-color: #092d47;
+  border-radius: 50%;
 }
-.proyecto .infoProyecto h3 {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  color: #DBDCD7;
-  font-size: 50px;
-  line-height: 1;
+.projectCard div a img {
+  padding: 2px;
+  width: 20px;
 }
-.proyecto .infoProyecto p {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  color: #DBDCD7;
-  font-size: 20px;
-}
-.proyecto .infoProyecto a {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  color: #DBDCD7;
-  font-size: 15px;
-  background-color: rgb(177, 177, 177);
-  padding: 3px 20px;
-  border-radius: 10px;
+.projectCard div div {
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  margin-top: 10px;
 }
 
-.contacto {
-  padding: 40px;
+#skillCardMini {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0px;
-}
-.contacto p {
-  color: #3d3d3d;
-  font-family: "Kanit", sans-serif;
-  text-wrap: wrap;
-  text-align: center;
-}
-.contacto div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  background-color: #092d47;
+  padding: 4px;
   gap: 5px;
 }
-.contacto div a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#skillCardMini h4 {
+  color: #DBDCD7;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
-.contacto div svg {
+#skillCardMini img {
   width: 20px;
-  fill: #3d3d3d;
+  height: 20px;
+}
+
+.invert {
+  box-shadow: -1px 1px 1px #1A475F;
+  grid-template-columns: 55% 45%;
+}
+.invert div {
+  order: 1;
+}
+.invert .imageProject {
+  order: 2;
+}
+
+#contacto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  min-height: 50vh;
+  padding: 7vw;
+}
+#contacto h2 {
+  font-family: "Kanit", sans-serif;
+  color: #DBDCD7;
+  font-size: 35px;
+}
+#contacto h2 span {
+  color: #4099AE;
+  font-family: "Dela Gothic One", system-ui;
+}
+#contacto h3 {
+  font-family: "Kanit", sans-serif;
+  color: #DBDCD7;
+  font-weight: 300;
+}
+#contacto h3 a {
+  font-family: "Kanit", sans-serif;
+  color: #DBDCD7;
+}
+#contacto h4 {
+  font-family: "Dela Gothic One", system-ui;
+  color: rgba(148, 185, 212, 0.4039215686);
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 500;
+}
+#contacto h5 {
+  font-family: "Dela Gothic One", system-ui;
+  color: rgba(148, 185, 212, 0.4039215686);
+  font-weight: 500;
+  font-size: 30px;
 }
 
 @media (max-width: 1024px) {
-  .infoMe p {
+  #contacto h4 {
+    font-size: 40px;
+  }
+  #contacto h5 {
     font-size: 20px;
   }
-  .proyecto .images img {
-    height: 200px;
-  }
-  .proyecto .infoProyecto h3 {
-    font-size: 35px;
-  }
-  .proyecto .infoProyecto p {
-    font-size: 18px;
-  }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .name h1 {
     font-size: 50px;
   }
   .name div h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
   .name div img {
-    width: 20px;
+    width: 25px;
   }
-  .infoMe p {
-    font-size: 17px;
+  #about {
+    gap: 40px;
+    padding: 60px;
   }
-  .infoMe .skills {
-    font-size: 14px;
+  #about p {
+    font-size: 18px;
   }
-  .proyecto .images img {
-    height: 140px;
+  #skills {
+    grid-template-columns: 100%;
   }
-  .proyecto .infoProyecto h3 {
+  .projectCard {
+    width: 85vw;
+  }
+  .projectCard div {
+    padding: 4px 10px;
+    margin-top: 0px;
+  }
+  .projectCard div h3 {
+    font-size: 20px;
+  }
+  .projectCard div p {
+    font-size: 13px;
+  }
+  .projectCard div a {
+    margin-top: 0px;
+  }
+  .projectCard div div {
+    margin-top: 3px;
+  }
+  #skillCardMini h4 {
+    font-size: 10px;
+  }
+  #skillCardMini img {
+    width: 15px;
+    height: 15px;
+  }
+  #contacto {
+    padding: 60px;
+  }
+  #contacto h2 {
+    font-size: 40px;
+  }
+  #contacto h3 {
+    font-size: 15px;
+  }
+  #contacto h4 {
     font-size: 30px;
   }
-  .proyecto .infoProyecto p {
-    font-size: 14px;
+  #contacto h5 {
+    font-size: 15px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 440px) {
   .name h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .name div h2 {
     font-size: 14px;
   }
-  .aboutMe {
-    gap: 30px;
-    padding: 30px;
-    height: 100%;
+  .name div img {
+    width: 15px;
+  }
+  #about {
+    padding: 40px;
+    display: flex;
     flex-direction: column;
   }
-  .aboutMe img {
-    width: 200px;
+  #projects {
+    padding: 50px 0px;
   }
-  .infoMe p {
+  .projectCard {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .projectCard div {
+    padding: 2px 5px;
+    margin-left: 10px;
+  }
+  .projectCard div h3 {
     font-size: 20px;
   }
-  .skills {
+  .projectCard div p {
+    font-size: 13px;
+  }
+  .projectCard div p span {
     display: none;
   }
-  .col {
-    display: inline-block;
+  .projectCard div a {
+    margin-top: 5px;
   }
-  .skillsCollapse {
-    display: inline-block;
+  .projectCard div a img {
+    padding: 1px;
+    width: 20px;
   }
-  .proyecto {
-    flex-direction: column;
-    width: 80vw;
+  .projectCard div div {
+    gap: 5px;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-bottom: 10px;
   }
-  .proyecto .images {
-    width: 40vh;
-    height: 15vh;
+  #skillCardMini {
+    padding: 4px;
+  }
+  #skillCardMini h4 {
+    font-size: 10px;
+  }
+  #skillCardMini img {
+    width: 15px;
+    height: 15px;
+  }
+  .invert img {
+    order: 1;
+  }
+  .invert div {
     order: 2;
   }
-  .proyecto .images img {
-    height: 100%;
+  #contacto {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
-  .proyecto .infoProyecto h3 {
-    font-size: 35px;
+  #contacto h2 {
+    font-size: 40px;
   }
-  .proyecto .infoProyecto p {
-    font-size: 18px;
+  #contacto h3 {
+    font-size: 15px;
+  }
+  #contacto h4 {
+    font-size: 30px;
+  }
+  #contacto h5 {
+    font-size: 15px;
   }
 }
 * {
@@ -357,7 +492,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #DBDCD7;
+  background-color: #081427;
 }
 
 p {
