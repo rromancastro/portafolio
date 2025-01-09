@@ -241,7 +241,12 @@ nav a:hover {
   justify-content: center;
   padding: 2px;
   background-color: #092d47;
-  border-radius: 50%;
+  font-family: "Kanit", sans-serif;
+  border-radius: 30%;
+  padding: 2px;
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 13px;
 }
 .projectCard div a img {
   padding: 2px;
