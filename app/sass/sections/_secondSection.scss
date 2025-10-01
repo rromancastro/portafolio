@@ -1,0 +1,120 @@
+#secondSection {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    padding: 5vh 5vw;
+    gap: 3vw;
+    background-color: #081427;
+}
+
+#secondSectionAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    h2 {
+        font-family: "Dela Gothic One", system-ui;
+        color: #fafafa;
+        font-size: 32px;
+        font-weight: 100;
+        span {
+            color: #4099AE;
+        }
+    }
+    p {
+        color: #fafafa;
+        font-weight: 200;
+        font-size: 24px;
+        font-family: "Alan Sans", sans-serif;
+        span {
+            color: #4099AE;
+        }
+    }
+}
+
+#secondSectionSkills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    h2 {
+        font-family: "Dela Gothic One", system-ui;
+        color: #fafafa;
+        font-size: 32px;
+        font-weight: 100;
+        span {
+            color: #4099AE;
+        }
+    }
+}
+
+.secondSectionSkillsDiv {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h3 {
+        font-family: "Alan Sans", sans-serif;
+        color: #fafafa;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.secondSectionSkillsDivMiniCards {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1120px) {
+    #secondSectionAbout {
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    #secondSectionSkills {
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .secondSectionSkillsDiv {
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 873px) {
+    #secondSection {
+        display: flex;
+        flex-direction: column;
+    }
+    #secondSectionAbout {
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    #secondSectionSkills {
+        margin-top: 30px;
+        h2 {
+            text-align: center;
+        }
+    }
+    .secondSectionSkillsDiv {
+        align-items: center;
+    }
+    .secondSectionSkillsDivMiniCards {
+        justify-content: center;
+    }
+}

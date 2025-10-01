@@ -1,0 +1,27 @@
+#thirdSection {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #061838;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 5vw;
+    gap: 20px;
+    h2 {
+        font-family: "Dela Gothic One", system-ui;
+        color: #fafafa;
+        font-size: 32px;
+        font-weight: 100;
+        span {
+            color: #4099AE;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    #thirdSection {
+        h2 {
+            font-size: 24px;
+        }
+    }
+}

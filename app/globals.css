@@ -1,0 +1,494 @@
+@import url("https:/fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Righteous&display=swap");
+@import url("https:/fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
+#waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 98vh;
+  width: 100vw;
+}
+
+.svgBackground {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #061837, rgba(14, 65, 102, 0.8588235294));
+}
+
+nav {
+  width: 95%;
+  height: 60px;
+  position: fixed;
+  margin: 10px 2.5%;
+  background: rgba(65, 65, 65, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 100;
+}
+nav p {
+  font-family: "Dela Gothic One", system-ui;
+  color: #bfc6cf;
+  font-size: 16px;
+  display: flex;
+  line-height: 1;
+}
+
+#navLinks {
+  display: flex;
+  gap: 30px;
+}
+#navLinks a {
+  font-family: "Dela Gothic One", system-ui;
+  color: #bfc6cf;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  line-height: 1;
+  cursor: pointer;
+  text-shadow: 1px 1px 0 #020202;
+}
+#navLinks a:hover {
+  color: #ffffff;
+}
+#navLinks a:active {
+  text-shadow: 0 0 10px #ffffff;
+}
+
+@media (max-width: 873px) {
+  nav {
+    padding: 0 10px;
+  }
+  #navLinks {
+    gap: 10px;
+  }
+  #navLinks a {
+    font-size: 8px;
+  }
+}
+.miniCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: auto;
+  padding: 5px 10px;
+}
+
+.miniCardIcon {
+  font-size: 20px;
+}
+
+.miniCardText {
+  font-family: "Alan Sans", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 1120px) {
+  .miniCard {
+    padding: 5px 5px;
+  }
+  .miniCardIcon {
+    font-size: 16px;
+  }
+  .miniCardText {
+    font-size: 12px;
+  }
+}
+.projectCard {
+  width: 1100px;
+  height: 250px;
+  background-color: #071533;
+  display: grid;
+  grid-template-rows: 1fr;
+  color: #ffffff;
+  font-family: "Alan Sans", sans-serif;
+}
+
+.projectCardImage {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.projectCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.projectCardContentTitle {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.projectCardContentTitle span {
+  color: #4099AE;
+}
+.projectCardContentTitle a {
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 3px;
+}
+
+.projectCardContentText {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.projectCardContentMiniCards {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1120px) {
+  .projectCard {
+    width: 700px;
+    height: 180px;
+  }
+  .projectCardImage {
+    height: 180px;
+  }
+  .projectCardContent {
+    padding: 0 15px;
+    gap: 5px;
+  }
+  .projectCardContentTitle {
+    font-size: 16px;
+  }
+  .projectCardContentTitle a {
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+  }
+  .projectCardContentText {
+    font-size: 14px;
+  }
+}
+@media (max-width: 873px) {
+  .projectCard {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .projectCardImage {
+    height: 42vw;
+    order: 1 !important;
+  }
+  .projectCardContent {
+    padding: 15px;
+    gap: 5px;
+    order: 2 !important;
+  }
+}
+#firstSection {
+  height: 98vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#firstSectionContent {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#firstSectionContent h1 {
+  font-family: "Dela Gothic One", system-ui;
+  color: #9BA4B1;
+  font-weight: 100;
+  font-size: 82px;
+  position: absolute;
+}
+#firstSectionContent p {
+  font-family: "Dela Gothic One", system-ui;
+  color: #9BA4B1;
+  font-weight: 100;
+  font-size: 28px;
+  position: absolute;
+  top: 55.5%;
+  left: 43.5%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  line-height: 1;
+  gap: 10px;
+}
+
+#headerUtilities {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  gap: 10px;
+}
+
+#descargarCurriculum {
+  font-family: "Righteous", system-ui;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#descargarCurriculum:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+#descargarCurriculum:active {
+  box-shadow: 0 0 10px #ffffff;
+}
+
+.redSocial {
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.redSocial:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.redSocial:active {
+  box-shadow: 0 0 10px #ffffff;
+}
+
+.redSocialIcon {
+  font-size: 20px;
+}
+
+@media (max-width: 873px) {
+  #firstSectionContent h1 {
+    font-size: 42px;
+  }
+  #firstSectionContent p {
+    font-size: 13px;
+    top: 52.5%;
+    gap: 5px;
+  }
+}
+#secondSection {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  padding: 5vh 5vw;
+  gap: 3vw;
+  background-color: #081427;
+}
+
+#secondSectionAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+#secondSectionAbout h2 {
+  font-family: "Dela Gothic One", system-ui;
+  color: #fafafa;
+  font-size: 32px;
+  font-weight: 100;
+}
+#secondSectionAbout h2 span {
+  color: #4099AE;
+}
+#secondSectionAbout p {
+  color: #fafafa;
+  font-weight: 200;
+  font-size: 24px;
+  font-family: "Alan Sans", sans-serif;
+}
+#secondSectionAbout p span {
+  color: #4099AE;
+}
+
+#secondSectionSkills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+#secondSectionSkills h2 {
+  font-family: "Dela Gothic One", system-ui;
+  color: #fafafa;
+  font-size: 32px;
+  font-weight: 100;
+}
+#secondSectionSkills h2 span {
+  color: #4099AE;
+}
+
+.secondSectionSkillsDiv {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.secondSectionSkillsDiv h3 {
+  font-family: "Alan Sans", sans-serif;
+  color: #fafafa;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.secondSectionSkillsDivMiniCards {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1120px) {
+  #secondSectionAbout h2 {
+    font-size: 24px;
+  }
+  #secondSectionAbout p {
+    font-size: 20px;
+  }
+  #secondSectionSkills h2 {
+    font-size: 24px;
+  }
+  .secondSectionSkillsDiv h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 873px) {
+  #secondSection {
+    display: flex;
+    flex-direction: column;
+  }
+  #secondSectionAbout h2 {
+    text-align: center;
+  }
+  #secondSectionAbout p {
+    text-align: center;
+  }
+  #secondSectionSkills {
+    margin-top: 30px;
+  }
+  #secondSectionSkills h2 {
+    text-align: center;
+  }
+  .secondSectionSkillsDiv {
+    align-items: center;
+  }
+  .secondSectionSkillsDivMiniCards {
+    justify-content: center;
+  }
+}
+#thirdSection {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #061838;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 5vw;
+  gap: 20px;
+}
+#thirdSection h2 {
+  font-family: "Dela Gothic One", system-ui;
+  color: #fafafa;
+  font-size: 32px;
+  font-weight: 100;
+}
+#thirdSection h2 span {
+  color: #4099AE;
+}
+
+@media (max-width: 1120px) {
+  #thirdSection h2 {
+    font-size: 24px;
+  }
+}
+#fourthSection {
+  height: 50vh;
+  width: 100%;
+  background-color: #081427;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#fourthSection h2 {
+  font-family: "Dela Gothic One", system-ui;
+  color: #fafafa;
+  font-size: 32px;
+  font-weight: 100;
+}
+#fourthSection h2 span {
+  color: #4099AE;
+}
+#fourthSection p {
+  font-family: "Alan Sans", sans-serif;
+  color: #fafafa;
+  font-size: 20px;
+  font-weight: 200;
+}
+#fourthSection a {
+  font-family: "Alan Sans", sans-serif;
+  color: #fafafa;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  background-color: #061C3C;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=globals.css.map */

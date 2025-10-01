@@ -1,0 +1,37 @@
+.miniCard {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: auto;
+    padding: 5px 10px;
+}
+
+.miniCardIcon {
+    font-size: 20px;
+}
+
+.miniCardText {
+    font-family: "Alan Sans", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 1120px) {
+    .miniCard {
+        padding: 5px 5px;
+    }
+    .miniCardIcon {
+        font-size: 16px;
+    }
+    .miniCardText {
+        font-size: 12px;
+    }
+}

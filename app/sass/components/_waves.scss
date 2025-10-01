@@ -1,0 +1,15 @@
+#waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 98vh;
+    width: 100vw;
+}
+
+.svgBackground {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #061837, #0e4166db);
+}
