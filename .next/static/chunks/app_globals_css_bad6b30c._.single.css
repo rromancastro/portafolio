@@ -1,0 +1,540 @@
+/* [project]/app/globals.css [app-client] (css) */
+#waves {
+  width: 100vw;
+  height: 98vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.svgBackground {
+  z-index: -1;
+  background: linear-gradient(#061837, rgba(14, 65, 102, .86));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+nav {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  background: rgba(65, 65, 65, .1);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 60px;
+  margin: 10px 2.5%;
+  padding: 0 30px;
+  display: flex;
+  position: fixed;
+}
+
+nav p {
+  color: #bfc6cf;
+  font-family: Dela Gothic One, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+}
+
+#navLinks {
+  gap: 30px;
+  display: flex;
+}
+
+#navLinks a {
+  color: #bfc6cf;
+  cursor: pointer;
+  text-shadow: 1px 1px #020202;
+  font-family: Dela Gothic One, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  display: flex;
+}
+
+#navLinks a:hover {
+  color: #fff;
+}
+
+#navLinks a:active {
+  text-shadow: 0 0 10px #fff;
+}
+
+@media (max-width: 873px) {
+  nav {
+    padding: 0 10px;
+  }
+
+  #navLinks {
+    gap: 10px;
+  }
+
+  #navLinks a {
+    font-size: 8px;
+  }
+}
+
+.miniCard {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  padding: 5px 10px;
+  display: flex;
+}
+
+.miniCardIcon {
+  font-size: 20px;
+}
+
+.miniCardText {
+  color: #fff;
+  text-wrap: nowrap;
+  font-family: Alan Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 1120px) {
+  .miniCard {
+    padding: 5px;
+  }
+
+  .miniCardIcon {
+    font-size: 16px;
+  }
+
+  .miniCardText {
+    font-size: 12px;
+  }
+}
+
+.projectCard {
+  color: #fff;
+  background-color: #071533;
+  grid-template-rows: 1fr;
+  width: 1100px;
+  height: 250px;
+  font-family: Alan Sans, sans-serif;
+  display: grid;
+}
+
+.projectCardImage {
+  object-fit: cover;
+  cursor: pointer;
+  width: 100%;
+  height: 250px;
+}
+
+.projectCardContent {
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  display: flex;
+}
+
+.projectCardContentTitle {
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+}
+
+.projectCardContentTitle span {
+  color: #4099ae;
+}
+
+.projectCardContentTitle a {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin: 0 3px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+}
+
+.projectCardContentText {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.projectCardContentMiniCards {
+  flex-wrap: wrap;
+  gap: 5px;
+  display: flex;
+}
+
+@media (max-width: 1120px) {
+  .projectCard {
+    width: 700px;
+    height: 180px;
+  }
+
+  .projectCardImage {
+    height: 180px;
+  }
+
+  .projectCardContent {
+    gap: 5px;
+    padding: 0 15px;
+  }
+
+  .projectCardContentTitle {
+    font-size: 16px;
+  }
+
+  .projectCardContentTitle a {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .projectCardContentText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 873px) {
+  .projectCard {
+    flex-direction: column;
+    gap: 15px;
+    width: 90vw;
+    height: 100%;
+    display: flex;
+  }
+
+  .projectCardImage {
+    height: 42vw;
+    order: 1 !important;
+  }
+
+  .projectCardContent {
+    gap: 5px;
+    padding: 15px;
+    order: 2 !important;
+  }
+}
+
+#firstSection {
+  width: 100%;
+  height: 98vh;
+  overflow: hidden;
+}
+
+#firstSectionContent {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+#firstSectionContent h1 {
+  color: #9ba4b1;
+  font-family: Dela Gothic One, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 82px;
+  font-weight: 100;
+  position: absolute;
+}
+
+#firstSectionContent p {
+  color: #9ba4b1;
+  justify-content: center;
+  align-self: center;
+  gap: 10px;
+  font-family: Dela Gothic One, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 1;
+  display: flex;
+  position: absolute;
+  top: 55.5%;
+  left: 43.5%;
+}
+
+#headerUtilities {
+  gap: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+}
+
+#descargarCurriculum {
+  color: #fff;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 8px;
+  align-items: center;
+  height: 40px;
+  padding: 0 30px;
+  font-family: Righteous, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 16px;
+  font-weight: 100;
+  text-decoration: none;
+  display: flex;
+}
+
+#descargarCurriculum:hover {
+  background: rgba(255, 255, 255, .2);
+}
+
+#descargarCurriculum:active {
+  box-shadow: 0 0 10px #fff;
+}
+
+.redSocial {
+  color: #fff;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  display: flex;
+}
+
+.redSocial:hover {
+  background: rgba(255, 255, 255, .2);
+}
+
+.redSocial:active {
+  box-shadow: 0 0 10px #fff;
+}
+
+.redSocialIcon {
+  font-size: 20px;
+}
+
+@media (max-width: 873px) {
+  #firstSectionContent h1 {
+    font-size: 42px;
+  }
+
+  #firstSectionContent p {
+    gap: 5px;
+    font-size: 13px;
+    top: 52.5%;
+  }
+}
+
+#secondSection {
+  background-color: #081427;
+  grid-template-rows: 1fr;
+  grid-template-columns: 60% 40%;
+  gap: 3vw;
+  width: 100%;
+  height: 100%;
+  padding: 5vh 5vw;
+  display: grid;
+}
+
+#secondSectionAbout {
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+#secondSectionAbout h2 {
+  color: #fafafa;
+  font-family: Dela Gothic One, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+#secondSectionAbout h2 span {
+  color: #4099ae;
+}
+
+#secondSectionAbout p {
+  color: #fafafa;
+  font-family: Alan Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+#secondSectionAbout p span {
+  color: #4099ae;
+}
+
+#secondSectionSkills {
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+#secondSectionSkills h2 {
+  color: #fafafa;
+  font-family: Dela Gothic One, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+#secondSectionSkills h2 span {
+  color: #4099ae;
+}
+
+.secondSectionSkillsDiv {
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.secondSectionSkillsDiv h3 {
+  color: #fafafa;
+  font-family: Alan Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.secondSectionSkillsDivMiniCards {
+  flex-wrap: wrap;
+  gap: 5px;
+  display: flex;
+}
+
+@media (max-width: 1120px) {
+  #secondSectionAbout h2 {
+    font-size: 24px;
+  }
+
+  #secondSectionAbout p {
+    font-size: 20px;
+  }
+
+  #secondSectionSkills h2 {
+    font-size: 24px;
+  }
+
+  .secondSectionSkillsDiv h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 873px) {
+  #secondSection {
+    flex-direction: column;
+    display: flex;
+  }
+
+  #secondSectionAbout h2, #secondSectionAbout p {
+    text-align: center;
+  }
+
+  #secondSectionSkills {
+    margin-top: 30px;
+  }
+
+  #secondSectionSkills h2 {
+    text-align: center;
+  }
+
+  .secondSectionSkillsDiv {
+    align-items: center;
+  }
+
+  .secondSectionSkillsDivMiniCards {
+    justify-content: center;
+  }
+}
+
+#thirdSection {
+  background-color: #061838;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 5vh 5vw;
+  display: flex;
+}
+
+#thirdSection h2 {
+  color: #fafafa;
+  font-family: Dela Gothic One, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+#thirdSection h2 span {
+  color: #4099ae;
+}
+
+@media (max-width: 1120px) {
+  #thirdSection h2 {
+    font-size: 24px;
+  }
+}
+
+#fourthSection {
+  background-color: #081427;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+
+#fourthSection h2 {
+  color: #fafafa;
+  font-family: Dela Gothic One, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+#fourthSection h2 span {
+  color: #4099ae;
+}
+
+#fourthSection p, #fourthSection a {
+  color: #fafafa;
+  font-family: Alan Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  background-color: #061c3c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=app_globals_css_bad6b30c._.single.css.map*/
