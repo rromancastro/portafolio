@@ -4,11 +4,12 @@ export const ThirdSection = () => {
     return <section id="thirdSection">
         <h2>Experiencia laboral<span>.</span></h2>
         <ProjectCard
-            href={'https://bacanplay.com/'}
+            href={'https://bacan-romancastro.vercel.app/'}
             name={'bacan'}
             desc={'Sitio web para BACAN, juego de cartas, es un sitio muy interactivo y con gran cantidad de animaciones.'}
             github={'https://github.com/rromancastro/BACAN'}
             miniCards={'next sass'}
+            enDesarrollo={true}
         />
         <ProjectCard
             href={'https://stream-lab-romancastro.vercel.app/'}
