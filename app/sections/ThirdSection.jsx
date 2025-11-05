@@ -9,10 +9,9 @@ export const ThirdSection = () => {
             desc={'Sitio web para BACAN, juego de cartas, es un sitio muy interactivo y con gran cantidad de animaciones.'}
             github={'https://github.com/rromancastro/BACAN'}
             miniCards={'next sass'}
-            enDesarrollo={true}
         />
         <ProjectCard
-            href={'https://stream-lab-romancastro.vercel.app/'}
+            href={'https://streamlab.com.ar/'}
             name={'stream lab'}
             desc={'Sitio web para Stream Lab, estudio de streaming, sitio informativo con un diseño moderno y una gran cantidad de animaciones.'}
             github={'https://github.com/rromancastro/BACAN'}
@@ -37,4 +36,5 @@ export const ThirdSection = () => {
             invert={true}
         />
     </section>
+
 }
