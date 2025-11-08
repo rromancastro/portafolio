@@ -17,7 +17,6 @@ export const ThirdSection = () => {
             github={'https://github.com/rromancastro/BACAN'}
             invert={true}
             miniCards={'next sass'}
-            enDesarrollo={true}
         />
         <h2>Proyectos personales<span>.</span></h2>
         <ProjectCard
@@ -38,3 +37,4 @@ export const ThirdSection = () => {
     </section>
 
 }
+
