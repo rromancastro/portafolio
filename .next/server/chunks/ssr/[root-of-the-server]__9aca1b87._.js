@@ -805,13 +805,12 @@ const ThirdSection = ()=>{
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ProjectCard"], {
-                href: 'https://stream-lab-romancastro.vercel.app/',
+                href: 'https://streamlab.com.ar/',
                 name: 'stream lab',
-                desc: 'Sitio web para Stream Lab, estudio de streaming, sitio informativo con un diesño moderno y una gran cantidad de animaciones.',
+                desc: 'Sitio web para Stream Lab, estudio de streaming, sitio informativo con un diseño moderno y una gran cantidad de animaciones.',
                 github: 'https://github.com/rromancastro/BACAN',
                 invert: true,
-                miniCards: 'next sass',
-                enDesarrollo: true
+                miniCards: 'next sass'
             }, void 0, false, {
                 fileName: "[project]/app/sections/ThirdSection.jsx",
                 lineNumber: 13,
@@ -824,13 +823,13 @@ const ThirdSection = ()=>{
                         children: "."
                     }, void 0, false, {
                         fileName: "[project]/app/sections/ThirdSection.jsx",
-                        lineNumber: 22,
+                        lineNumber: 21,
                         columnNumber: 33
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/sections/ThirdSection.jsx",
-                lineNumber: 22,
+                lineNumber: 21,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ProjectCard"], {
@@ -841,7 +840,7 @@ const ThirdSection = ()=>{
                 miniCards: 'next sass firebase'
             }, void 0, false, {
                 fileName: "[project]/app/sections/ThirdSection.jsx",
-                lineNumber: 23,
+                lineNumber: 22,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ProjectCard"], {
@@ -853,7 +852,18 @@ const ThirdSection = ()=>{
                 invert: true
             }, void 0, false, {
                 fileName: "[project]/app/sections/ThirdSection.jsx",
-                lineNumber: 30,
+                lineNumber: 29,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ProjectCard"], {
+                href: 'https://youtube.com/shorts/i5tIRXbqR9I?si=uZ4Xh7zs5CH-iAhC',
+                name: 'miclase',
+                desc: 'Proyecto desarrollado en ReactNative. Aula virtual tipo Classroom. Utilicé Firebase para la autenticación y almacenamiento de datos, permitiendo a los usuarios registrarse,  iniciar sesión, acceder a sus cursos de manera segura y utilizar el servicio de mensajería.',
+                github: 'https://github.com/rromancastro/MiClase',
+                miniCards: 'reactNative firebase'
+            }, void 0, false, {
+                fileName: "[project]/app/sections/ThirdSection.jsx",
+                lineNumber: 37,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
