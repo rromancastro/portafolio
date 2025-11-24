@@ -35,7 +35,7 @@ export const ThirdSection = () => {
             invert={true}
         />
         <ProjectCard
-            href={'https://youtube.com/shorts/i5tIRXbqR9I?si=uZ4Xh7zs5CH-iAhC'}
+            href={'https://www.youtube.com/watch?v=O2akN3uFufg'}
             name={'miclase'}
             desc={'Proyecto desarrollado en ReactNative. Aula virtual tipo Classroom. Utilicé Firebase para la autenticación y almacenamiento de datos, permitiendo a los usuarios registrarse,  iniciar sesión, acceder a sus cursos de manera segura y utilizar el servicio de mensajería.'}
             github={'https://github.com/rromancastro/MiClase'}
@@ -44,4 +44,5 @@ export const ThirdSection = () => {
     </section>
 
 }
+
 
