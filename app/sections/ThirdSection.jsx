@@ -18,6 +18,23 @@ export const ThirdSection = () => {
             invert={true}
             miniCards={'next sass'}
         />
+        <ProjectCard
+            href={'https://topquin.vercel.app/'}
+            name={'topquin energy'}
+            desc={'Sitio web informativo para una empresa especializada en energía renovable, con un diseño moderno y una gran cantidad de animaciones.'}
+            github={'https://github.com/rromancastro/topquin'}
+            enDesarrollo={true}
+            miniCards={'next sass'}
+        />
+        <ProjectCard
+            href={'https://easylunch-iota.vercel.app/'}
+            name={'easy lunch'}
+            desc={'Sitio web informativo para una empresa de comida corporativa.'}
+            github={'https://github.com/rromancastro/easylunch'}
+            enDesarrollo={true}
+            invert={true}
+            miniCards={'next sass'}
+        />
         <h2>Proyectos personales<span>.</span></h2>
         <ProjectCard
             href={'https://tesla-romancastro.vercel.app/'}
