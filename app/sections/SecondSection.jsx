@@ -17,6 +17,7 @@ export const SecondSection = () => {
                     <MiniCard type={"react"} />
                     <MiniCard type={"next"} />
                     <MiniCard type={"reactNative"} />
+                    <MiniCard type={"angular"} />
                 </div>
             </div>
             <div className="secondSectionSkillsDiv">

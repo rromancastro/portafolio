@@ -1,5 +1,5 @@
 "use client";
-import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaBootstrap, FaGitAlt, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaBootstrap, FaGitAlt, FaGithub, FaAngular } from "react-icons/fa";
 import { RiJavascriptFill, RiNextjsFill } from "react-icons/ri";
 import { SiChakraui, SiFirebase } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
@@ -23,7 +23,8 @@ export const MiniCard = ({type}) => {
             type === 'chakra' ? <SiChakraui className="miniCardIcon" color="#4DB6AC" /> :
             type === 'git' ? <FaGitAlt className="miniCardIcon" color="#DF4B33" /> :
             type === 'github' ? <FaGithub className="miniCardIcon" color="#FFFFFF" /> :
-            type === 'firebase' ? <SiFirebase className="miniCardIcon" color="#FF9100" /> : null
+            type === 'firebase' ? <SiFirebase className="miniCardIcon" color="#FF9100" /> : 
+            type === 'angular' ? <FaAngular className="miniCardIcon" color="#cc1901" /> : null
         }
         <p className="miniCardText">
             {
@@ -38,7 +39,8 @@ export const MiniCard = ({type}) => {
             type === 'chakra' ? 'ChakraUI' :
             type === 'git' ? 'Git' :
             type === 'github' ? 'GitHub' :
-            type === 'firebase' ? "Firebase" : null
+            type === 'firebase' ? "Firebase" : 
+            type === 'angular' ? "Angular" : null
         }
         </p>
     </article>

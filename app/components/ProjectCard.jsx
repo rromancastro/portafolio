@@ -41,6 +41,9 @@ export const ProjectCard = ({href, github, name, desc, invert = false, miniCards
                 {
                     String(miniCards).includes('firebase') ? <MiniCard type={"firebase"} /> : null
                 }
+                {
+                    String(miniCards).includes('angular') ? <MiniCard type={"angular"} /> : null
+                }
             </div>
         </div>
     </div>

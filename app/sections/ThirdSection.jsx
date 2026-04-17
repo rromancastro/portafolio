@@ -19,6 +19,23 @@ export const ThirdSection = () => {
             miniCards={'next sass'}
         />
         <ProjectCard
+            href={'https://gamehouseba.vercel.app/'}
+            name={'game house'}
+            desc={'Sitio web informativo para el escape room mas grande de Buenos Aires. Diseño amigable y animaciones modernas.'}
+            github={'https://github.com/rromancastro/gamehouseba'}
+            enDesarrollo={true}
+            miniCards={'next sass'}
+        />
+        <ProjectCard
+            invert={true}
+            href={'https://tml-logistica.vercel.app/'}
+            name={'tml logistica'}
+            desc={'Sitio web informativo para una empresa de logística.'}
+            github={'https://github.com/rromancastro/tml-logistica'}
+            enDesarrollo={true}
+            miniCards={'angular sass'}
+        />
+        <ProjectCard
             href={'https://topquin.vercel.app/'}
             name={'topquin energy'}
             desc={'Sitio web informativo para una empresa especializada en energía renovable, con un diseño moderno y una gran cantidad de animaciones.'}
