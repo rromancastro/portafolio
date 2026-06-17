@@ -19,21 +19,28 @@ export const ThirdSection = () => {
             miniCards={'next sass'}
         />
         <ProjectCard
-            href={'https://gamehouseba.vercel.app/'}
-            name={'game house'}
-            desc={'Sitio web informativo para el escape room mas grande de Buenos Aires. Diseño amigable y animaciones modernas.'}
-            github={'https://github.com/rromancastro/gamehouseba'}
-            enDesarrollo={true}
-            miniCards={'next sass'}
+            href={'https://tmlogistica.com.ar/'}
+            name={'tml logistica'}
+            desc={'Sitio web corporativo desarrollado para TML Logística, orientado a presentar servicios de transporte y logística de manera clara, moderna y profesional.'}
+            github={'https://github.com/rromancastro/tml-logistica'}
+            miniCards={'angular sass'}
         />
         <ProjectCard
             invert={true}
-            href={'https://tml-logistica.vercel.app/'}
-            name={'tml logistica'}
-            desc={'Sitio web informativo para una empresa de logística.'}
-            github={'https://github.com/rromancastro/tml-logistica'}
+            href={'https://gamehouseba.vercel.app/'}
+            name={'game house'}
+            desc={'Plataforma web moderna para Game House BA, enfocada en brindar una experiencia visual atractiva e intuitiva para la presentación de juegos de escape e incluyendo un sistema de reservas.'}
+            github={'https://github.com/rromancastro/gamehouseba'}
             enDesarrollo={true}
-            miniCards={'angular sass'}
+            miniCards={'next sass firebase framer'}
+        />
+        <ProjectCard
+            href={'https://humint-tan.vercel.app/en'}
+            name={'humint'}
+            desc={'Desarrollo de una aplicación web multilingüe utilizando Next.js, React y tecnologías modernas de frontend, enfocada en la presentación y análisis de información. Implementación de diseño responsive, optimización SEO, rendimiento web y experiencia de usuario, siguiendo buenas prácticas de desarrollo y escalabilidad.'}
+            github={'https://github.com/rromancastro/humint'}
+            enDesarrollo={true}
+            miniCards={'next sass gsap'}
         />
         <ProjectCard
             href={'https://topquin.vercel.app/'}
@@ -41,6 +48,7 @@ export const ThirdSection = () => {
             desc={'Sitio web informativo para una empresa especializada en energía renovable, con un diseño moderno y una gran cantidad de animaciones.'}
             github={'https://github.com/rromancastro/topquin'}
             enDesarrollo={true}
+            invert={true}
             miniCards={'next sass'}
         />
         <ProjectCard
@@ -49,7 +57,6 @@ export const ThirdSection = () => {
             desc={'Sitio web informativo para una empresa de comida corporativa.'}
             github={'https://github.com/rromancastro/easylunch'}
             enDesarrollo={true}
-            invert={true}
             miniCards={'next sass'}
         />
         <h2>Proyectos personales<span>.</span></h2>

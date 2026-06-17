@@ -44,6 +44,12 @@ export const ProjectCard = ({href, github, name, desc, invert = false, miniCards
                 {
                     String(miniCards).includes('angular') ? <MiniCard type={"angular"} /> : null
                 }
+                {
+                    String(miniCards).includes('framer') ? <MiniCard type={"framer"} /> : null
+                }
+                {
+                    String(miniCards).includes('gsap') ? <MiniCard type={"gsap"} /> : null
+                }
             </div>
         </div>
     </div>

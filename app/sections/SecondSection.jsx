@@ -7,7 +7,7 @@ export const SecondSection = () => {
             <p>Soy <span>Román</span>. <span>Desarrollador Front-End</span> especializado en <span>React, NextJS y Firebase.</span> Me apasiona crear soluciones digitales intuitivas y eficientes, enfocadas en <span>diseño responsivo y experiencia de usuario.</span> Mi objetivo es contribuir con creatividad y optimización para impulsar <span>proyectos innovadores</span> que generen <span>impacto real.</span> Busco crecer profesionalmente desarrollando productos que mejoren la <span>interacción entre usuarios y tecnología.</span></p>
         </div>
         <div id="secondSectionSkills">
-            <h2>Habilidades <span>:</span></h2>
+            <h2>Herramientas <span>:</span></h2>
             <div className="secondSectionSkillsDiv">
                 <h3>Front-End</h3>
                 <div className="secondSectionSkillsDivMiniCards">
@@ -34,6 +34,8 @@ export const SecondSection = () => {
                     <MiniCard type={"git"} />
                     <MiniCard type={"github"} />
                     <MiniCard type={"firebase"} />
+                    <MiniCard type={"gsap"} />
+                    <MiniCard type={"framer"} />
                 </div>
             </div>
         </div>
