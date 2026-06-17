@@ -13,15 +13,17 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Roman Castro",
-  description: "Portafolio de Román Castro, desarrollador Front-End especializado en React, NextJS y Firebase. Me apasiona crear soluciones digitales intuitivas y eficientes, enfocadas en diseño responsivo y experiencia de usuario. Mi objetivo es contribuir con creatividad y optimización para impulsar proyectos innovadores que generen impacto real. Busco crecer profesionalmente desarrollando productos que mejoren la interacción entre usuarios y tecnología. ",
+  metadataBase: new URL("https://rromancastro.vercel.app"),
+  description:
+    "Portafolio de Roman Castro, desarrollador Front-End especializado en React, Next.js y Firebase.",
   openGraph: {
-    title: "Roman Castro – Portfolio",
+    title: "Roman Castro - Portfolio",
     description: "Mi portafolio como desarrollador web.",
-    url: "https://rromancastro.vercel.app/",
+    url: "/",
     siteName: "Roman Castro",
     images: [
       {
-        url: "https://rromancastro.vercel.app/og-image.png",
+        url: "/social-preview.png",
         width: 1200,
         height: 630,
         alt: "Vista previa del portafolio de Roman Castro",
@@ -32,15 +34,15 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roman Castro – Portfolio",
+    title: "Roman Castro - Portfolio",
     description: "Mi portafolio como desarrollador web.",
-    images: ["https://rromancastro.vercel.app/og-image.png"]
+    images: ["/social-preview.png"],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
