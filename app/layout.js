@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { CursorFollower, SmoothScroll } from "./components";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = "https://romancastro.vercel.app";
 const siteName = "Roman Castro Portfolio";
 const title = "Roman Castro | Creative Front-End Developer";
 const description =
@@ -52,7 +52,7 @@ export const metadata = {
     description,
     images: [
       {
-        url: "/roman.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Roman Castro portfolio",
@@ -63,7 +63,7 @@ export const metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/roman.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
