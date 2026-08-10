@@ -28,16 +28,22 @@
 }
 #headerSection #waves {
   position: absolute;
+  inset: 0;
   bottom: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
   z-index: 6;
   opacity: 0.8;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
 }
 #headerSection .svgBackground {
   z-index: 6;
   position: absolute;
+  inset: 0;
+  display: block;
   height: 100%;
   width: 100%;
 }
@@ -508,6 +514,10 @@
 }
 #thirdSection .thirdSection__link:focus-visible {
   box-shadow: inset 0 0 0 2px #88D5F8;
+}
+#thirdSection .thirdSection__link--static {
+  cursor: default;
+  pointer-events: none;
 }
 #thirdSection .thirdSection__heading {
   width: 90vw;

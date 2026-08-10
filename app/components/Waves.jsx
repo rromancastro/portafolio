@@ -11,7 +11,7 @@ export const Waves = () => {
 	s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
 		</defs>
 		<g>
-			<use href='#wave' opacity=".3">
+			<use href='#wave' opacity=".3" transform="translate(270 230)">
 				<animateTransform
           attributeName="transform"
           attributeType="XML"
@@ -23,7 +23,7 @@ export const Waves = () => {
           keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
           repeatCount="indefinite" />
 			</use>
-			<use href='#wave' opacity=".6">
+			<use href='#wave' opacity=".6" transform="translate(-270 230)">
 				<animateTransform
           attributeName="transform"
           attributeType="XML"
@@ -35,7 +35,7 @@ export const Waves = () => {
           keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
           repeatCount="indefinite" />
 			</use>
-			<use href='#wave' opacity=".9">
+			<use href='#wave' opacity=".9" transform="translate(0 230)">
 				<animateTransform
           attributeName="transform"
           attributeType="XML"

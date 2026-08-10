@@ -128,6 +128,11 @@
         }
     }
 
+    .thirdSection__link--static {
+        cursor: default;
+        pointer-events: none;
+    }
+
     .thirdSection__heading {
         width: 90vw;
         max-width: 1200px;

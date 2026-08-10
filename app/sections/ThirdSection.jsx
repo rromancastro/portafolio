@@ -233,17 +233,17 @@ export const ThirdSection = () => {
                                         aria-hidden="true"
                                     />
                                 )}
-                                {slide.href === "#" ? (
-                                    <div className="thirdSection__link">
+                                {!slide.href ? (
+                                    <div className="thirdSection__link thirdSection__link--static">
                                         <h2 className="thirdSection__heading">{slide.heading}</h2>
                                         <p className="thirdSection__text" data-slide-index={index}>{slide.text1}</p>
                                         <p className="thirdSection__text" data-slide-index={index}>{slide.text2}</p>
                                     </div>
                                 ) : (
                                     <a target="_blank" rel="noreferrer" className="thirdSection__link" href={slide.href}>
-                                    <h2 className="thirdSection__heading">{slide.heading}</h2>
-                                    <p className="thirdSection__text" data-slide-index={index}>{slide.text1}</p>
-                                    <p className="thirdSection__text" data-slide-index={index}>{slide.text2}</p>
+                                        <h2 className="thirdSection__heading">{slide.heading}</h2>
+                                        <p className="thirdSection__text" data-slide-index={index}>{slide.text1}</p>
+                                        <p className="thirdSection__text" data-slide-index={index}>{slide.text2}</p>
                                     </a>
                                 )}
                             </div>
