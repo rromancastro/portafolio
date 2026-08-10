@@ -3,11 +3,13 @@
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { SplitH2, SplitP } from "../components"
+import { useLanguage } from "../i18n"
 import { BsCopy } from "react-icons/bs"
 
 const EMAIL = "romancastro.dev@gmail.com"
 
 export const FifthSection = () => {
+    const { language, t } = useLanguage()
     const [emailCopied, setEmailCopied] = useState(false)
     const copiedTimeout = useRef(null)
 
@@ -35,41 +37,39 @@ export const FifthSection = () => {
     return <section id="fifthSection">
 
         <article>
-            <SplitH2 id="fifthSectionTitle">
-                HAVE AN IDEA? <br />
-                <span>LET'S BUILD IT.</span>
+            <SplitH2 key={`title-${language}`} id="fifthSectionTitle">
+                {t.fifth.titleLineOne} <br />
+                <span>{t.fifth.titleLineTwo}</span>
             </SplitH2>
-            <SplitP id="fifthSectionParagraph">
-                Have a project, an opportunity
-                or just an idea?
-                I'd love to hear about it.
+            <SplitP key={`paragraph-${language}`} id="fifthSectionParagraph">
+                {t.fifth.paragraph}
             </SplitP>
         </article>
 
         <article>
-            <button onClick={copyEmail} type="button" aria-label="Copy email">
+            <button onClick={copyEmail} type="button" aria-label={t.fifth.copyEmail}>
                 <span className={emailCopied ? "is-copied" : undefined}>
-                    {emailCopied ? "EMAIL COPIED" : EMAIL}
+                    {emailCopied ? t.fifth.copied : EMAIL}
                 </span>
                 <BsCopy className={emailCopied ? "is-copied" : undefined} />
             </button>
             <p>
-                <Link href={'/'}>
+                <Link target="_blank" href={'https://www.linkedin.com/in/rromancastro/'}>
                     LINKEDIN
                 </Link>
-                <Link href={'/'}>
+                <Link target="_blank" href={'https://github.com/rromancastro'}>
                     GITHUB
                 </Link>
-                <Link href={'/'}>
+                <Link target="_blank" href={'https://www.instagram.com/romancastro.dev/'}>
                     INSTAGRAM
                 </Link>
                 <Link href={'/'}>
-                    DOWNLOAD RESUME
+                    {t.fifth.resume}
                 </Link>
             </p>
         </article>
 
-        <p>DESIGNED & DEVELOPED BY ROMÁN CASTRO</p>
+        <p>{t.fifth.credits}</p>
         <p>©2026</p>
     </section>
 }

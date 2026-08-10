@@ -1,20 +1,21 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import { useLanguage } from "../i18n";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-const slides = [
+const baseSlides = [
     {
         heading: "PROJECTS BUILT TO PERFORM. DESIGNED TO BE REMEMBERED.",
         text1: "",
         text2: "CLICK THE PROJECT TO EXPLORE",
         mediaType: "image",
         media: "/thirdSection.png",
-        href: "#",
+        href: "",
     },
     {
         heading: "GAME HOUSE",
@@ -22,7 +23,7 @@ const slides = [
         text2: "NEXT.JS · FIREBASE · GSAP · FRAMER-MOTION · SASS",
         mediaType: "video",
         media: "/projects/gamehouse.mp4",
-        href: "#game-house",
+        href: "https://www.gamehouseba.com/es",
     },
     {
         heading: "STEAMLAB",
@@ -30,7 +31,7 @@ const slides = [
         text2: "NEXT.JS · FRAMER MOTION · SASS",
         mediaType: "video",
         media: "/projects/streamlab.mp4",
-        href: "#greensock",
+        href: "https://streamlab.com.ar/",
     },
     {
         heading: "BACAN PLAY",
@@ -38,7 +39,7 @@ const slides = [
         text2: "NEXT.JS · SASS",
         mediaType: "video",
         media: "/projects/bacan.mp4",
-        href: "#animation-platform",
+        href: "https://bacanplay.com/",
     },
     {
         heading: "TML LOGISTICA",
@@ -46,12 +47,18 @@ const slides = [
         text2: "ANGULAR · SASS",
         mediaType: "video",
         media: "/projects/tmlogistica.mp4",
-        href: "#keep-scrolling",
+        href: "https://tmlogistica.com.ar/",
     },
 ];
 
 export const ThirdSection = () => {
+    const { language, t } = useLanguage();
     const sectionRef = useRef(null);
+    const slides = useMemo(() => baseSlides.map((slide, index) => ({
+        ...slide,
+        ...t.third.slides[index],
+        text2: index === 0 ? t.third.click : slide.text2,
+    })), [t]);
 
     useEffect(() => {
         const section = sectionRef.current;
@@ -185,25 +192,25 @@ export const ThirdSection = () => {
         }, section);
 
         return () => ctx.revert();
-    }, []);
+    }, [language, slides]);
 
     return (
         <section id="thirdSection" ref={sectionRef}>
             <div className="thirdSection__header">
-                <p><span>02 - </span>SELECTED WORK</p>
+                <p><span>02 - </span>{t.third.point}</p>
             </div>
             <div className="thirdSection__progress" aria-hidden="true">
                 {slides.map((slide, index) => (
                     <span
                         className="thirdSection__progressStep"
-                        key={slide.heading}
+                        key={`${language}-${index}`}
                     >
                         <span className="thirdSection__progressFill" />
                     </span>
                 ))}
             </div>
             {slides.map((slide, index) => (
-                <div className="thirdSection__panel" key={slide.heading}>
+                <div className="thirdSection__panel" key={`${language}-${slide.heading}`}>
                     <div className="thirdSection__outer">
                         <div className="thirdSection__inner">
                             <div className="thirdSection__bg">
@@ -226,11 +233,19 @@ export const ThirdSection = () => {
                                         aria-hidden="true"
                                     />
                                 )}
-                                <a className="thirdSection__link" href={slide.href}>
+                                {slide.href === "#" ? (
+                                    <div className="thirdSection__link">
+                                        <h2 className="thirdSection__heading">{slide.heading}</h2>
+                                        <p className="thirdSection__text" data-slide-index={index}>{slide.text1}</p>
+                                        <p className="thirdSection__text" data-slide-index={index}>{slide.text2}</p>
+                                    </div>
+                                ) : (
+                                    <a target="_blank" rel="noreferrer" className="thirdSection__link" href={slide.href}>
                                     <h2 className="thirdSection__heading">{slide.heading}</h2>
                                     <p className="thirdSection__text" data-slide-index={index}>{slide.text1}</p>
                                     <p className="thirdSection__text" data-slide-index={index}>{slide.text2}</p>
-                                </a>
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>

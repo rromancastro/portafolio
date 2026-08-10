@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { useLanguage } from "../i18n";
 
 gsap.registerPlugin(MorphSVGPlugin, ScrambleTextPlugin);
 
@@ -44,6 +45,7 @@ const loaderShapes = [
 ];
 
 export const Loader = () => {
+    const { language, t } = useLanguage();
     const loaderRef = useRef(null);
     const logoRef = useRef(null);
     const textRef = useRef(null);
@@ -79,7 +81,7 @@ export const Loader = () => {
 
         timeline.to(text, {
             scrambleText: {
-                text: "Diseño. Código. Movimiento.",
+                text: t.loader.text,
                 chars: "upperAndLowerCase",
                 revealDelay: 0,
                 tweenLength: true,
@@ -111,10 +113,10 @@ export const Loader = () => {
         });
 
         return () => timeline.kill();
-    }, []);
+    }, [language, t.loader.text]);
 
     return (
-        <div id="loader" ref={loaderRef} aria-label="Loading">
+        <div id="loader" ref={loaderRef} aria-label={t.loader.label}>
             <svg className="loader__logo" viewBox="0 0 130 130" aria-hidden="true">
                 {loaderShapes.map((shape, index) => (
                     <path

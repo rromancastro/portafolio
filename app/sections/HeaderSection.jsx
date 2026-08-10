@@ -4,11 +4,13 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { Waves } from "../components";
+import { useLanguage } from "../i18n";
 import { RiArrowDownDoubleFill } from "react-icons/ri";
 
 gsap.registerPlugin(SplitText);
 
 export const HeaderSection = () => {
+    const { language, t } = useLanguage();
     const sectionRef = useRef(null);
     const titleRef = useRef(null);
 
@@ -34,21 +36,21 @@ export const HeaderSection = () => {
             onMouseEnter={(event) => event.currentTarget.style.setProperty("--glow-opacity", "1")}
             onMouseLeave={(event) => event.currentTarget.style.setProperty("--glow-opacity", "0")}
         >
-            <img src="/roman.png" alt="Roman Castro" className="headerSection__image" />
+            <img src="/roman.png" alt={t.header.imageAlt} className="headerSection__image" />
             <div className="headerSection__imageGlow" aria-hidden="true" />
             <Waves />
-            <section id="headerContent">
+            <section id="headerContent" key={language}>
                 <div className="headerTitleMarquee">
                     <h1 id="headerTitle" ref={titleRef}>
-                        ROMÁN CASTRO - CREATIVE  FRONT-END  DEVELOPER
+                        {t.header.title}
                     </h1>
                     <h1 aria-hidden="true">
-                        ROMÁN CASTRO - CREATIVE  FRONT-END  DEVELOPER
+                        {t.header.title}
                     </h1>
                 </div>
             </section>
-            <p>CREATIVE FRONTEND DEVELOPER</p>
-            <p>AVAILABLE FOR PROJECTS</p>
+            <p>{t.header.role}</p>
+            <p>{t.header.availability}</p>
         </section>
     );
 };

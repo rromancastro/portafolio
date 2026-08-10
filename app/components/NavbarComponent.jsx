@@ -2,10 +2,12 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
+import { useLanguage } from "../i18n";
 import { useIsMobile } from "../hooks";
 
 export const NavbarComponent = () => {
 
+    const { language, toggleLanguage, t } = useLanguage();
     const [hoverLogo, setHoverLogo] = useState(false);
     const [navStep, setNavStep] = useState(0);
     const openTimeout = useRef(null);
@@ -76,22 +78,22 @@ export const NavbarComponent = () => {
                     </defs>
                 </svg>
             
-            <button>
-                ES
+            <button type="button" onClick={toggleLanguage} aria-label={language === "en" ? "Switch to Spanish" : "Cambiar a inglés"}>
+                {language === "en" ? "ES" : "EN"}
             </button>
         </div>
         <div id="navDrop">
             <Link href="#secondSection" onClick={closeNavbar}>
-                WHAT I DO <BsArrowUpRightSquareFill />
+                {t.nav.whatIDo} <BsArrowUpRightSquareFill />
             </Link>
             <Link href="#thirdSection" onClick={closeNavbar}>
-                PROJECTS <BsArrowUpRightSquareFill />
+                {t.nav.projects} <BsArrowUpRightSquareFill />
             </Link>
             <Link href="#fourthSection" onClick={closeNavbar}>
-                CAPABILITIES <BsArrowUpRightSquareFill />
+                {t.nav.capabilities} <BsArrowUpRightSquareFill />
             </Link>
             <Link href="#fifthSection" onClick={closeNavbar}>
-                CONTACT ME <BsArrowUpRightSquareFill />
+                {t.nav.contact} <BsArrowUpRightSquareFill />
             </Link>
         </div>
     </nav>

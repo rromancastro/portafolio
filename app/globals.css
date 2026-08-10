@@ -152,36 +152,72 @@
 }
 @keyframes headerImageGlowOrbit {
   0% {
-    --cursor-x: 72%;
-    --cursor-y: 12%;
+    --cursor-x: 76%;
+    --cursor-y: 30%;
+  }
+  6.25% {
+    --cursor-x: 84%;
+    --cursor-y: 38%;
   }
   12.5% {
-    --cursor-x: 91%;
-    --cursor-y: 36%;
+    --cursor-x: 88%;
+    --cursor-y: 50%;
+  }
+  18.75% {
+    --cursor-x: 84%;
+    --cursor-y: 62%;
   }
   25% {
-    --cursor-x: 82%;
-    --cursor-y: 63%;
+    --cursor-x: 76%;
+    --cursor-y: 76%;
+  }
+  31.25% {
+    --cursor-x: 64%;
+    --cursor-y: 86%;
   }
   37.5% {
     --cursor-x: 50%;
-    --cursor-y: 96%;
+    --cursor-y: 90%;
+  }
+  43.75% {
+    --cursor-x: 36%;
+    --cursor-y: 86%;
   }
   50% {
-    --cursor-x: 18%;
-    --cursor-y: 63%;
+    --cursor-x: 24%;
+    --cursor-y: 76%;
+  }
+  56.25% {
+    --cursor-x: 16%;
+    --cursor-y: 62%;
   }
   62.5% {
-    --cursor-x: 9%;
-    --cursor-y: 36%;
+    --cursor-x: 12%;
+    --cursor-y: 50%;
+  }
+  68.75% {
+    --cursor-x: 16%;
+    --cursor-y: 38%;
   }
   75% {
-    --cursor-x: 28%;
-    --cursor-y: 12%;
+    --cursor-x: 24%;
+    --cursor-y: 30%;
   }
-  87.5%, 100% {
-    --cursor-x: 72%;
-    --cursor-y: 12%;
+  81.25% {
+    --cursor-x: 36%;
+    --cursor-y: 26%;
+  }
+  87.5% {
+    --cursor-x: 50%;
+    --cursor-y: 24%;
+  }
+  93.75% {
+    --cursor-x: 64%;
+    --cursor-y: 26%;
+  }
+  100% {
+    --cursor-x: 76%;
+    --cursor-y: 30%;
   }
 }
 @media (max-width: 1024px) {

@@ -3,6 +3,7 @@
 import { Fragment } from "react";
 import { useInView } from "react-intersection-observer";
 import { SplitH2, SplitP } from "../components";
+import { useLanguage } from "../i18n";
 import { useIsMobile } from "../hooks";
 
 const capabilities = [
@@ -59,17 +60,23 @@ const CapabilityArticle = ({ capability, index }) => {
 };
 
 export const FourthSection = () => {
+    const { language, t } = useLanguage();
+    const translatedCapabilities = capabilities.map((capability, index) => ({
+        ...capability,
+        ...t.fourth.capabilities[index],
+    }));
+
     return (
         <section id="fourthSection">
-            <SplitP id="fourthSectionPoint">
-                <span>03 -</span> CAPABILITIES
+            <SplitP key={`point-${language}`} id="fourthSectionPoint">
+                <span>03 -</span> {t.fourth.point}
             </SplitP>
-            <SplitH2 id="fourthSectionTitle">
-                WHAT I BRING <br />
-                TO EVERY PROJECT.
+            <SplitH2 key={`title-${language}`} id="fourthSectionTitle">
+                {t.fourth.titleLineOne} <br />
+                {t.fourth.titleLineTwo}
             </SplitH2>
-            {capabilities.map((capability, index) => (
-                <CapabilityArticle key={capability.number} capability={capability} index={index} />
+            {translatedCapabilities.map((capability, index) => (
+                <CapabilityArticle key={`${language}-${capability.number}`} capability={capability} index={index} />
             ))}
         </section>
     );
