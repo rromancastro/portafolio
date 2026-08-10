@@ -63,7 +63,7 @@ export const FifthSection = () => {
                 <Link target="_blank" href={'https://www.instagram.com/romancastro.dev/'}>
                     INSTAGRAM
                 </Link>
-                <Link href={'/'}>
+                <Link download={true} href={'/CV-RomanCastro.pdf'}>
                     {t.fifth.resume}
                 </Link>
             </p>
