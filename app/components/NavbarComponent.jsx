@@ -79,7 +79,7 @@ export const NavbarComponent = () => {
                 </svg>
             
             <button type="button" onClick={toggleLanguage} aria-label={language === "en" ? "Switch to Spanish" : "Cambiar a inglés"}>
-                {language === "en" ? "ES" : "EN"}
+                {language === "en" ? "EN" : "ES"}
             </button>
         </div>
         <div id="navDrop">
