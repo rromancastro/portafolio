@@ -1,0 +1,34 @@
+#loader {
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f2;
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.loader__logo {
+    width: 60px;
+    height: auto;
+    overflow: visible;
+
+}
+
+.loader__target {
+    visibility: hidden;
+}
+
+.loader__text {
+    min-height: 1em;
+    width: 70px;
+    color: #212121;
+    font-family: "Inter", monospace;
+    font-size: clamp(14px, 1.4vw, 18px);
+    font-weight: 500;
+    line-height: 1;
+    text-align: start;
+}

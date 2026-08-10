@@ -1,0 +1,200 @@
+#fifthSection {
+    padding: 72px;
+    height: 100%;
+    background: #040a14;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 72px;
+
+    article {
+        &:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            h2 {
+                font-size: 64px;
+
+                span {
+                    color: #88D5F8;
+                    text-shadow: 0px 0px 10px #023766;
+                    font-style: italic;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin-left: auto;
+            gap: 16px;
+
+            button {
+                width: 100%;
+                display: flex;
+                gap: 16px;
+                justify-content: space-between;
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 24px;
+                cursor: pointer;
+
+                border-bottom: 3px solid #88D5F8;
+                padding-bottom: 16px;
+
+                span {
+                    min-width: 0;
+                    font: inherit;
+                    text-align: left;
+
+                    &.is-copied {
+                        color: #88D5F8;
+                        text-shadow: 0px 0px 10px #023766;
+                    }
+                }
+
+                svg {
+                    flex: 0 0 auto;
+
+                    &.is-copied {
+                        color: #88D5F8;
+                        filter: drop-shadow(0px 0px 10px #023766);
+                    }
+                }
+            }
+
+            p {
+                display: flex;
+                gap: 16px;
+                font-weight: 600;
+                font-size: 24px;
+
+                a {
+                    &:hover {
+                        color: #88D5F8;
+                        text-decoration: underline;
+                        text-shadow: 0px 0px 10px #023766;
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        &:nth-child(4) {
+            margin-left: auto;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #fifthSection {
+        padding: 32px;
+        gap: 32px;
+
+        article {
+            &:nth-child(1) {
+                h2 {
+                    font-size: 48px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            &:nth-child(2) {
+                p {
+                    font-size: 14px;
+    
+                    a {
+                        font-size: 14px;
+    
+                        svg {
+                            font-size: 14px;
+                            height: 14px;
+                            width: 14px;
+                        }
+                    }
+                    
+                }
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        >p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #fifthSection {
+        padding: 40px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        article {
+            &:nth-child(1) {
+                align-items: center;
+                gap: 32px;
+                h2 {
+                    font-size: 40px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                    max-width: 290px;
+                }
+            }
+
+            &:nth-child(2) {
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                    width: calc(100vw - 32px);
+                    gap: 0px;
+                    justify-content: space-between;
+    
+                    a {
+                        font-size: 12px;
+                        text-align: center;
+                        svg {
+                            font-size: 12px;
+                            height: 12px;
+                            width: 12px;
+                        }
+                    }
+                    
+                }
+                button {
+                    width: 100%;
+                    font-size: 12px;
+                }
+            }
+            
+        }
+
+        p {
+            &:nth-child(3) {
+                font-size: 12px;
+            }
+            &:nth-child(4) {
+                font-size: 12px;
+                margin-left: 0px;
+            }
+        }
+    }
+}

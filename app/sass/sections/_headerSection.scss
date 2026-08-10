@@ -1,0 +1,319 @@
+#headerSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    --cursor-x: 50%;
+    --cursor-y: 50%;
+    --glow-opacity: 0;
+    border-radius: 0px 0px 40px 40px;
+
+    >p {
+        position: absolute;
+        z-index: 30;
+        font-weight: 600;
+        font-size: 14px;
+
+        &:nth-child(5) {
+            left: 72px;
+            bottom: 72px;
+            color: #000;
+        }
+
+        &:nth-child(6) {
+            right: 72px;
+            bottom: 72px;
+            color: #000;
+        }
+    }
+
+
+    #waves {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 6;
+        opacity: .8;
+    }
+
+    .svgBackground {
+        z-index: 6;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        height: 120vh;
+        filter: brightness(.4) drop-shadow(0 16px 15px rgba(0, 0, 0, .55));
+        pointer-events: none;
+    }
+
+    .headerSection__imageGlow {
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        opacity: var(--glow-opacity);
+        pointer-events: none;
+        transition: opacity .2s ease;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle 150px at var(--cursor-x) var(--cursor-y),
+                    rgba(255, 255, 255, .36) 0%,
+                    rgba(255, 255, 255, .2) 28%,
+                    rgba(255, 255, 255, .08) 52%,
+                    transparent 78%);
+            filter: blur(10px);
+            mix-blend-mode: screen;
+            mask: url("/roman.png") center top / auto 120vh no-repeat;
+            -webkit-mask: url("/roman.png") center top / auto 120vh no-repeat;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url("/roman.png") center top / auto 120vh no-repeat;
+            mask-image: radial-gradient(circle 170px at var(--cursor-x) var(--cursor-y),
+                    #000 0 28%,
+                    rgba(0, 0, 0, .45) 50%,
+                    transparent 78%);
+            -webkit-mask-image: radial-gradient(circle 170px at var(--cursor-x) var(--cursor-y),
+                    #000 0 28%,
+                    rgba(0, 0, 0, .45) 50%,
+                    transparent 78%);
+            filter:
+                drop-shadow(0 0 10px rgba(255, 255, 255, .42)) drop-shadow(0 0 24px rgba(255, 255, 255, .22));
+        }
+    }
+
+    >button {
+        position: absolute;
+        bottom: 32px;
+        z-index: 10;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        color: #000;
+        font-weight: 600;
+        font-size: 14px;
+
+        svg {
+            font-size: 24px;
+            animation: arrow 1s ease-in-out infinite alternate;
+        }
+    }
+}
+
+@property --cursor-x {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 50%;
+}
+
+@property --cursor-y {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 50%;
+}
+
+#headerContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+
+    .headerTitleMarquee {
+        display: flex;
+        width: max-content;
+        animation: headerTitleMarquee 18s linear infinite;
+        will-change: transform;
+    }
+
+    h1 {
+        display: flex;
+        width: max-content;
+        white-space: nowrap;
+        padding-right: 4vw;
+        font-size: 128px;
+        font-weight: 900;
+        line-height: .9;
+    }
+
+    p {
+        font-weight: 500;
+        text-align: end;
+        font-size: 20px;
+    }
+}
+
+@keyframes headerTitleMarquee {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes headerImageGlowOrbit {
+    0% {
+        --cursor-x: 72%;
+        --cursor-y: 12%;
+    }
+
+    12.5% {
+        --cursor-x: 91%;
+        --cursor-y: 36%;
+    }
+
+    25% {
+        --cursor-x: 82%;
+        --cursor-y: 63%;
+    }
+
+    37.5% {
+        --cursor-x: 50%;
+        --cursor-y: 96%;
+    }
+
+    50% {
+        --cursor-x: 18%;
+        --cursor-y: 63%;
+    }
+
+    62.5% {
+        --cursor-x: 9%;
+        --cursor-y: 36%;
+    }
+
+    75% {
+        --cursor-x: 28%;
+        --cursor-y: 12%;
+    }
+
+    87.5%,
+    100% {
+        --cursor-x: 72%;
+        --cursor-y: 12%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #headerSection {
+        --glow-opacity: 1;
+
+        .headerSection__imageGlow {
+            inset: auto;
+            top: 0;
+            left: 50%;
+            width: calc(120vh * 617 / 1024);
+            height: 120vh;
+            transform: translateX(-50%);
+            transition: none;
+
+            &::before {
+                background: radial-gradient(circle 115px at var(--cursor-x) var(--cursor-y),
+                        rgba(255, 255, 255, .5) 0%,
+                        rgba(255, 255, 255, .28) 22%,
+                        rgba(136, 213, 248, .16) 48%,
+                        transparent 74%);
+                mask: url("/roman.png") center top / 100% 100% no-repeat;
+                -webkit-mask: url("/roman.png") center top / 100% 100% no-repeat;
+            }
+
+            &::after {
+                background: url("/roman.png") center top / 100% 100% no-repeat;
+                mask-image: radial-gradient(circle 130px at var(--cursor-x) var(--cursor-y),
+                        #000 0 24%,
+                        rgba(0, 0, 0, .6) 42%,
+                        transparent 72%);
+                -webkit-mask-image: radial-gradient(circle 130px at var(--cursor-x) var(--cursor-y),
+                        #000 0 24%,
+                        rgba(0, 0, 0, .6) 42%,
+                        transparent 72%);
+                filter:
+                    drop-shadow(0 0 8px rgba(255, 255, 255, .75)) drop-shadow(0 0 18px rgba(136, 213, 248, .5)) drop-shadow(0 0 34px rgba(255, 255, 255, .2));
+            }
+
+            &::before,
+            &::after {
+                animation: headerImageGlowOrbit 20s linear infinite;
+            }
+        }
+
+        >p {
+            font-size: 12px;
+            &:nth-child(5) {
+                left: 32px;
+                bottom: 32px;
+            }
+            &:nth-child(6) {
+                right: 32px;
+                bottom: 32px;
+            }
+        }
+    }
+
+    #headerContent {
+        h1 {
+            font-size: 80px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    #headerSection {
+        >p {
+            font-size: 10px;
+            &:nth-child(5) {
+                left: 16px;
+                bottom: 40px;
+            }
+            &:nth-child(6) {
+                right: 16px;
+                bottom: 40px;
+            }
+        }
+
+        img {
+            height: 80vh;
+            bottom: 5vh;
+            top: auto;
+        }
+
+        .headerSection__imageGlow {
+            top: auto;
+            bottom: 5vh;
+            width: calc(80vh * 617 / 1024);
+            height: 80vh;
+        }
+    }
+}

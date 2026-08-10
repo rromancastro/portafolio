@@ -1,0 +1,141 @@
+#fourthSection {
+    padding: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 72px;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        overflow: hidden;
+        height: 100%;
+        max-height: 100px;
+        transition: 1s;
+        border-bottom: 1px solid rgba(255,255,255,.45);
+        padding: 16px;
+        cursor: pointer;
+
+        p {
+            &:nth-child(1) {
+                font-size: 40px;
+                font-weight: 600;
+
+                span {
+                    color: #88D5F8;
+                }
+            }
+
+            &:nth-child(3) {
+                font-size: 24px;
+                text-transform: uppercase;
+                span {
+                    color: #88D5F8;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &:hover {
+            max-height: 160px;
+        }
+
+        &:nth-child(3), &:nth-child(5) {
+            border-left: 1px solid rgba(255,255,255,.45);
+        }
+
+        &:nth-child(4), &:nth-child(6) {
+            border-right: 1px solid rgba(255,255,255,.45);
+            align-items: end;
+        }
+    }
+}
+
+#fourthSectionPoint {
+    align-self: flex-start;
+
+    span {
+        color: #88D5F8;
+        font-weight: 600;
+    }
+}
+
+#fourthSectionTitle {
+    font-size: 64px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    #fourthSection {
+        padding: 32px;
+        gap: 32px;
+
+        article {
+            padding: 16px;
+            max-height: 80px;
+
+            &.is-in-view {
+                max-height: 180px;
+            }
+
+            p {
+                &:nth-child(1) {
+                    font-size: 24px;
+                }
+                &:nth-child(2) {
+                    font-size: 14px;
+                }
+                &:nth-child(3) {
+                    font-size: 16px;
+                }
+            }
+        }   
+    }
+    #fourthSectionPoint {
+        font-size: 14px;
+    }
+    #fourthSectionTitle {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    #fourthSection {
+        padding: 40px 16px;
+
+        article {
+            padding: 12px;
+            max-height: 70px;
+            gap: 8px;
+
+            &.is-in-view {
+                max-height: 150px;
+            }
+
+            p {
+                &:nth-child(1) {
+                    font-size: 20px;
+                }
+                &:nth-child(2) {
+                    font-size: 12px;
+                }
+                &:nth-child(3) {
+                    font-size: 12px;
+                }
+            }
+
+            &:nth-child(4), &:nth-child(6) {
+                p {
+                    text-align: end;
+                }
+            }
+        }   
+    }
+    #fourthSectionPoint {
+        font-size: 12px;
+    }
+    #fourthSectionTitle {
+        font-size: 40px;
+    }
+}

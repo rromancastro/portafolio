@@ -1,0 +1,136 @@
+// sass --watch app/sass/styles.scss app/globals.css
+
+@use "./sections/headerSection";
+@use "./sections/secondSection";
+@use "./sections/thirdSection";
+@use "./sections/fourthSection";
+@use "./sections/fifthSection";
+@use "./components/navbarComponent";
+@use "./components/animatedCharsText";
+@use "./components/loader";
+
+@font-face {
+    font-family: 'TT Lakes Neue';
+    src: url('/fonts/LakesDemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TT Lakes Neue';
+    src: url('/fonts/LakesBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TT Lakes Neue';
+    src: url('/fonts/LakesBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url('/fonts/Archivo.ttf') format('truetype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Archivo";
+    src: url('/fonts/Archivo.ttf') format('truetype');
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Archivo";
+    src: url('/fonts/Archivo.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Archivo";
+    src: url('/fonts/Archivo.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Archivo";
+    src: url('/fonts/Archivo.ttf') format('truetype');
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h1, h2, h3, p, a, button, input, textarea, select, label, span {
+    color: #fff;
+    line-height: 1;
+    font-family: 'Archivo', sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'TT Lakes Neue', sans-serif;
+}
+
+
+body {
+    background-color: #081427;
+}
+
+.cursor-follower {
+    width: 14px;
+    height: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    border-radius: 50%;
+    background-color: #88D5F8;
+}
+
+@media (max-width: 1024px) {
+    .cursor-follower {
+        display: none;
+    }
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
