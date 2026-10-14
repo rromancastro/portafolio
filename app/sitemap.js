@@ -1,4 +1,4 @@
-const siteUrl = "https://romancastro.vercel.app";
+const siteUrl = "https://romancastro.xyz";
 
 export default function sitemap() {
   return [

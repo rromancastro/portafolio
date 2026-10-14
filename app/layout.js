@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { CursorFollower, SmoothScroll } from "./components";
 import "./globals.css";
 
-const siteUrl = "https://romancastro.vercel.app";
+const siteUrl = "https://romancastro.xyz";
 const siteName = "Roman Castro Portfolio";
 const title = "Roman Castro | Creative Front-End Developer";
 const description =
@@ -26,6 +26,9 @@ export const metadata = {
   },
   description,
   applicationName: siteName,
+  other: {
+    "facebook-domain-verification": "87357zgtdy54is9tubeqg90l2gpv0w",
+  },
   authors: [{ name: "Roman Castro", url: siteUrl }],
   creator: "Roman Castro",
   publisher: "Roman Castro",
