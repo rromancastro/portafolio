@@ -85,7 +85,7 @@ export const translations = {
             copyEmail: "Copy email",
             copied: "EMAIL COPIED",
             resume: "DOWNLOAD RESUME",
-            credits: "DESIGNED & DEVELOPED BY ROMÁN CASTRO",
+            credits: "DESIGNED & DEVELOPED BY ROMÁN EZEQUIEL CASTRO",
         },
         loader: {
             label: "Loading",
@@ -172,7 +172,7 @@ export const translations = {
             copyEmail: "Copiar email",
             copied: "EMAIL COPIADO",
             resume: "DESCARGAR CV",
-            credits: "DISEÑADO Y DESARROLLADO POR ROMÁN CASTRO",
+            credits: "DISEÑADO Y DESARROLLADO POR ROMÁN EZEQUIEL CASTRO",
         },
         loader: {
             label: "Cargando",
