@@ -26,6 +26,14 @@ const baseSlides = [
         href: "https://www.gamehouseba.com/es",
     },
     {
+        heading: "HUMINT",
+        text1: "A dynamic digital experience for a Web3 branding and marketing studio, built around motion, interaction and visual identity.",
+        text2: "NEXT.JS · GSAP · FRAMER-MOTION · SASS",
+        mediaType: "video",
+        media: "/projects/humint.mp4",
+        href: "https://humintstudio.xyz/en",
+    },
+    {
         heading: "STEAMLAB",
         text1: "An immersive digital experience for an audiovisual studio.",
         text2: "NEXT.JS · FRAMER MOTION · SASS",
@@ -40,6 +48,14 @@ const baseSlides = [
         mediaType: "video",
         media: "/projects/bacan.mp4",
         href: "https://bacanplay.com/",
+    },
+    {
+        heading: "EASY LUNCH",
+        text1: "A modern digital experience for a corporate lunch service, combining clarity, motion and responsive design.",
+        text2: "NEXT.JS · GSAP · FRAMER-MOTION · SASS",
+        mediaType: "video",
+        media: "/projects/humint.mp4",
+        href: "https://humintstudio.xyz/en",
     },
     {
         heading: "TML LOGISTICA",

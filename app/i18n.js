@@ -129,12 +129,20 @@ export const translations = {
                     text1: "Una plataforma inmersiva de escape rooms con sistema de reservas integrado.",
                 },
                 {
+                    heading: "HUMINT",
+                    text1: "Una experiencia digital dinámica para un estudio de marketing y marca Web3, construida en torno al movimiento, la interacción y la identidad visual.",
+                },
+                {
                     heading: "STEAMLAB",
                     text1: "Una experiencia digital inmersiva para un estudio audiovisual.",
                 },
                 {
                     heading: "BACAN PLAY",
                     text1: "Un sitio web lúdico e interactivo creado para un juego de cartas dinámico.",
+                },
+                {
+                    heading: "EASY LUNCH",
+                    text1: "Una experiencia digital moderna para un servicio de almuerzo corporativo, que combina claridad, movimiento y diseño responsivo.",
                 },
                 {
                     heading: "TML LOGISTICA",
