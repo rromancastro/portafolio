@@ -55,7 +55,7 @@ const baseSlides = [
         text2: "NEXT.JS · GSAP · FRAMER-MOTION · SASS",
         mediaType: "video",
         media: "/projects/humint.mp4",
-        href: "https://humintstudio.xyz/en",
+        href: "https://easylunch.com.ar/",
     },
     {
         heading: "TML LOGISTICA",

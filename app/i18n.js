@@ -42,12 +42,20 @@ export const translations = {
                     text1: "An immersive escape room platform with an integrated booking system.",
                 },
                 {
+                    heading: "HUMINT",
+                    text1: "A dynamic digital experience for a Web3 branding and marketing studio, built around motion, interaction and visual identity.",
+                },
+                {
                     heading: "STEAMLAB",
                     text1: "An immersive digital experience for an audiovisual studio.",
                 },
                 {
                     heading: "BACAN PLAY",
                     text1: "A playful and interactive website created for a fast-paced card game.",
+                },
+                {
+                    heading: "EASY LUNCH",
+                    text1: "A modern digital experience for a corporate lunch service, combining clarity, motion and responsive design.",
                 },
                 {
                     heading: "TML LOGISTICA",
